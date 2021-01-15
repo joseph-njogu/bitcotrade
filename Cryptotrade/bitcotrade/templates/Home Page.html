@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<!-- saved from url=(0037)https://eliteshop.guru/dashboard.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <!-- metas -->
+    
+    <meta name="author" content="bitcoin">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="keywords" content="bank logs">
+    <meta name="description" content="Home Page">
+
+    <!-- title  -->
+    <title>Home Page</title>
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="https://eliteshop.guru/img/logos/favicon.png">
+    <link rel="apple-touch-icon" href="https://eliteshop.guru/img/logos/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="https://eliteshop.guru/img/logos/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="https://eliteshop.guru/img/logos/apple-touch-icon-114x114.png">
+
+    <!-- common plugins -->
+    <link rel="stylesheet" href="./Home Page_files/bootstrap.min.css">
+    <link rel="stylesheet" href="./Home Page_files/font-awesome.min.css">
+    <link rel="stylesheet" href="./Home Page_files/style.css">
+    <link rel="stylesheet" href="./Home Page_files/default.css">
+    <link rel="stylesheet" href="./Home Page_files/switchery.min.css">
+
+    <!-- full-calendar plugin -->
+    <link rel="stylesheet" href="./Home Page_files/main.css">
+    <link rel="stylesheet" href="./Home Page_files/main(1).css">
+    <link rel="stylesheet" href="./Home Page_files/main(2).css">
+    <link rel="stylesheet" href="./Home Page_files/main(3).css">
+
+    <!-- nvd3 plugin -->
+    <link rel="stylesheet" href="./Home Page_files/nv.d3.min.css">
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="./Home Page_files/styles.css">
+
+<style type="text/css">div.eapps-widget{position:relative}div.eapps-widget.eapps-widget-show-toolbar:before{position:absolute;content:"";display:block;bottom:0;top:0;left:0;right:0;pointer-events:none;border:1px solid transparent;transition:border .3s ease;z-index:1}.eapps-widget-toolbar{position:absolute;top:-32px;left:0;right:0;display:block;z-index:99999;padding-bottom:4px;transition:all .3s ease;pointer-events:none;opacity:0}.eapps-widget:hover .eapps-widget-toolbar{opacity:1;pointer-events:auto}.eapps-widget-toolbar a{text-decoration:none;box-shadow:none!important}.eapps-widget-toolbar-panel{border-radius:6px;background-color:#222;color:#fff;display:-ms-inline-flexbox;display:inline-flex;-ms-flex-align:center;align-items:center;top:0;position:relative;transition:all .3s ease;opacity:0;overflow:hidden;-webkit-backface-visibility:hidden;backface-visibility:hidden;box-shadow:0 0 0 1px hsla(0,0%,100%,.2);height:28px}.eapps-widget:hover .eapps-widget-toolbar-panel{opacity:1}.eapps-widget-toolbar-panel-wrapper{width:100%;position:relative}.eapps-widget-toolbar-panel-only-you{position:absolute;top:-24px;font-size:11px;line-height:14px;color:#9c9c9c;padding:5px 4px}.eapps-widget-toolbar-panel-logo{width:28px;height:28px;border-right:1px solid hsla(0,0%,100%,.2);display:-ms-flexbox;display:flex;-ms-flex-align:center;align-items:center;-ms-flex-pack:center;justify-content:center}.eapps-widget-toolbar-panel-logo svg{display:block;width:15px;height:15px;fill:#f93262}.eapps-widget-toolbar-panel-edit{font-size:12px;font-weight:400;line-height:14px;display:-ms-inline-flexbox;display:inline-flex;-ms-flex-align:center;align-items:center;padding:9px;border-right:1px solid hsla(0,0%,100%,.2);color:#fff;text-decoration:none}.eapps-widget-toolbar-panel-edit-icon{width:14px;height:14px;margin-right:8px}.eapps-widget-toolbar-panel-edit-icon svg{display:block;width:100%;height:100%;fill:#fff}.eapps-widget-toolbar-panel-views{display:-ms-inline-flexbox;display:inline-flex;-ms-flex-pack:center;justify-content:center;-ms-flex-align:center;align-items:center}.eapps-widget-toolbar-panel-views-label{font-size:12px;font-weight:400;line-height:14px;margin-left:8px}.eapps-widget-toolbar-panel-views-bar{display:-ms-inline-flexbox;display:inline-flex;width:70px;height:3px;border-radius:2px;margin-left:8px;background-color:hsla(0,0%,100%,.3)}.eapps-widget-toolbar-panel-views-bar-inner{border-radius:2px;background-color:#4ad504}.eapps-widget-toolbar-panel-views-green .eapps-widget-toolbar-panel-views-bar-inner{background-color:#4ad504}.eapps-widget-toolbar-panel-views-red .eapps-widget-toolbar-panel-views-bar-inner{background-color:#ff4734}.eapps-widget-toolbar-panel-views-orange .eapps-widget-toolbar-panel-views-bar-inner{background-color:#ffb400}.eapps-widget-toolbar-panel-views-percent{display:-ms-inline-flexbox;display:inline-flex;margin-left:8px;margin-right:8px;font-size:12px;font-weight:400;line-height:14px}.eapps-widget-toolbar-panel-views-get-more{padding:9px 16px;background-color:#f93262;color:#fff;font-size:12px;font-weight:400;border-radius:0 6px 6px 0}.eapps-widget-toolbar-panel-share{position:absolute;top:0;display:inline-block;margin-left:8px;width:83px;height:28px;padding-bottom:4px;box-sizing:content-box!important}.eapps-widget-toolbar-panel-share:hover .eapps-widget-toolbar-panel-share-block{opacity:1;pointer-events:all}.eapps-widget-toolbar-panel-share-button{padding:0 18px;height:28px;background-color:#1c91ff;color:#fff;font-size:12px;font-weight:400;border-radius:6px;position:absolute;top:0;display:-ms-flexbox;display:flex;-ms-flex-direction:row;flex-direction:row;cursor:default;-ms-flex-align:center;align-items:center}.eapps-widget-toolbar-panel-share-button svg{display:inline-block;margin-right:6px;fill:#fff;position:relative;top:-1px}.eapps-widget-toolbar-panel-share-block{position:absolute;background:#fff;border:1px solid hsla(0,0%,7%,.1);border-radius:10px;width:209px;top:32px;transform:translateX(-63px);opacity:0;pointer-events:none;transition:all .3s ease;box-shadow:0 4px 6px rgba(0,0,0,.05)}.eapps-widget-toolbar-panel-share-block:hover{opacity:1;pointer-events:all}.eapps-widget-toolbar-panel-share-block-text{color:#111;font-size:15px;font-weight:400;padding:12px 0;text-align:center}.eapps-widget-toolbar-panel-share-block-text-icon{padding-bottom:4px}.eapps-widget-toolbar-panel-share-block-actions{display:-ms-flexbox;display:flex;-ms-flex-direction:row;flex-direction:row;border-top:1px solid hsla(0,0%,7%,.1)}.eapps-widget-toolbar-panel-share-block-actions-item{width:33.333333%;display:-ms-flexbox;display:flex;-ms-flex-pack:center;justify-content:center;-ms-flex-align:center;align-items:center;height:39px;transition:all .3s ease;background-color:transparent}.eapps-widget-toolbar-panel-share-block-actions-item:hover{background-color:#fafafa}.eapps-widget-toolbar-panel-share-block-actions-item a{width:100%;height:100%;display:-ms-flexbox;display:flex;-ms-flex-pack:center;justify-content:center;-ms-flex-align:center;align-items:center}.eapps-widget-toolbar-panel-share-block-actions-item-icon{width:16px;height:16px;display:block}.eapps-widget-toolbar-panel-share-block-actions-item-facebook .eapps-widget-toolbar-panel-share-block-actions-item-icon{fill:#3c5a9b}.eapps-widget-toolbar-panel-share-block-actions-item-twitter .eapps-widget-toolbar-panel-share-block-actions-item-icon{fill:#1ab2e8}.eapps-widget-toolbar-panel-share-block-actions-item-google .eapps-widget-toolbar-panel-share-block-actions-item-icon{fill:#dd4b39}.eapps-widget-toolbar-panel-share-block-actions-item:not(:last-child){border-right:1px solid hsla(0,0%,7%,.1)}</style><script src="https://static.elfsight.com/apps/telegram-chat/release/334f999e-f66b-4dfc-9de3-1272428316e4/app/telegramChat.js" defer="defer"></script><style>.eapp-telegram-chat-root-layout-component {
+  position: relative;
+  width: 100%;
+  -webkit-font-smoothing: antialiased;
+}
+.eapp-telegram-chat-root-layout-component,
+.eapp-telegram-chat-root-layout-component * {
+  box-sizing: border-box !important;
+  outline: none !important;
+}
+.eapp-telegram-chat-root-layout-component a {
+  text-decoration: none;
+}
+.eapp-telegram-chat-root-layout-component a:hover,
+.eapp-telegram-chat-root-layout-component a:focus {
+  text-decoration: underline;
+}
+</style><style type="text/css" data-styled-jsx=""></style></head>
+
+<body class="page-sidebar-fixed page-header-fixed">
+
+    <!-- start page loading -->
+    
+    <!-- end page loading -->
+
+    <!-- start page container -->
+    <div class="page-container">
+               <!-- start page sidebar -->
+               <div class="page-sidebar">
+                <a class="logo-box" href="https://eliteshop.guru/huntington.html">
+                    <span>HOME PAGE</span>
+                    <i class="icon-radio_button_checked" id="fixed-sidebar-toggle-button"></i>
+                    <i class="icon-close" id="sidebar-toggle-button-close"></i>
+                </a>
+<div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 100%;"><div class="page-sidebar-inner" style="overflow: hidden; width: auto; height: 100%;">
+<div class="page-sidebar-menu active-page">
+<ul class="accordion-menu">
+<li class="active">
+    <a href="https://eliteshop.guru/dashboard.html">
+        <i class="menu-icon icon-home4"></i><span>Home Page</span>
+    </a>
+</li>    
+<li>
+    <a href="https://eliteshop.guru/huntington.html">
+        <i class="menu-icon">
+            <img src="..media/Home Page_files/huntington.jpg" class="kaimage">
+        </i>
+        <span>Huntington Bank</span>
+    </a>
+</li>
+<li>
+    <a href="https://eliteshop.guru/woodforest.html">
+        <i class="menu-icon">
+            <img src="./Home Page_files/woodforest.jpg" class="kaimage">
+        </i>
+        <span>Woodforest Bank</span>
+    </a>
+</li>
+<li>
+    <a href="https://eliteshop.guru/barclays.html">
+        <i class="menu-icon">
+            <img src="./Home Page_files/barclays.jpg" class="kaimage">
+        </i>
+        <span>Barclays Bank</span>
+    </a>
+</li>
+<li>
+    <a href="https://eliteshop.guru/citi.html">
+        <i class="menu-icon">
+            <img src="..media/Home Page_files/citi.jpg" class="kaimage">
+        </i>
+        <span>Citi Bank</span>
+    </a>
+</li>
+<li>
+    <a href="https://eliteshop.guru/bbt.html">
+        <i class="menu-icon">
+            <img src="./Home Page_files/bbt.jpg" class="kaimage">
+        </i>
+        <span>BB&amp;T Bank</span>
+    </a>
+</li>
+<li>
+    <a href="https://eliteshop.guru/bbva.html">
+        <i class="menu-icon">
+            <img src="./Home Page_files/bbva.jpg" class="kaimage">
+        </i>
+        <span>BBVA Bank</span>
+    </a>
+</li>
+<li>
+    <a href="https://eliteshop.guru/chase.html">
+        <i class="menu-icon">
+            <img src="./Home Page_files/chase.jpg" class="kaimage">
+        </i>
+        <span>Chase Bank</span>
+    </a>
+</li>
+<li>
+    <a href="https://eliteshop.guru/nfcu.html">
+        <i class="menu-icon">
+            <img src="./Home Page_files/nfcu.jpg" class="kaimage">
+        </i>
+        <span>NFCU Bank</span>
+    </a>
+</li>
+<li>
+    <a href="https://eliteshop.guru/rbc.html">
+        <i class="menu-icon">
+            <img src="./Home Page_files/rbc.jpg" class="kaimage">
+        </i>
+        <span>RBC Bank</span>
+    </a>
+</li>
+<li>
+    <a href="https://eliteshop.guru/pnc.html">
+        <i class="menu-icon">
+            <img src="./Home Page_files/pnc.jpg" class="kaimage">
+        </i>
+        <span>PNC Bank</span>
+    </a>
+</li>
+<li>
+    <a href="https://eliteshop.guru/scotia.html">
+        <i class="menu-icon">
+            <img src="./Home Page_files/scotia.jpg" class="kaimage">
+        </i>
+        <span>Scotia Bank</span>
+    </a>
+</li>
+
+<li class="menu-divider"></li>
+<li>
+    <a href="javascript:void(0);">
+        <i class="menu-icon icon-public"></i><span>Bank Logs</span><span class="label label-danger">7.1</span>
+    </a>
+</li>
+</ul>
+</div>
+</div><div class="slimScrollBar" style="background: rgb(204, 204, 204); width: 6px; position: absolute; top: 0px; opacity: 0.2; display: none; border-radius: 0px; z-index: 99; right: 0px; height: 623px;"></div><div class="slimScrollRail" style="width: 6px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 0px; background: rgb(51, 51, 51); opacity: 0.2; z-index: 90; right: 0px;"></div></div>
+</div>
+
+        
+<!-- start page content -->
+        <div class="page-content">
+            <!-- start page header -->
+            <div class="page-header">
+                <nav class="navbar navbar-default">
+                    <div class="container-fluid">
+<!-- Brand and toggle get grouped for better mobile display -->
+<div class="navbar-header">
+    <div class="logo-sm">
+        <a href="javascript:void(0)" id="sidebar-toggle-button" style="padding: 10px 15px; background: white; border-radius: 5px;">
+            <i class="fa fa-angle-right" style="font-size: 1.2rem;  color: black;"></i>
+        </a>
+        <a class="logo-box" href="https://eliteshop.guru/dashboard.html">
+            <span id="displayNameHolder">Joseph Njogu</span>
+            
+        </a>
+<ul class="nav navbar-nav navbar-right">
+        <li style="float: right;" class="dropdown user-dropdown">
+            <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                <img src="https://lh3.googleusercontent.com/a-/AOh14GhXwxFmGXWwynTXry3m8a3kQSi3N-Hdo7C3ukodCA=s96-c" id="photoHolder" alt="" class="rounded-circle keimage">
+            </a>
+               <ul class="dropdown-menu dropdown-lg dropdown-content">
+                                        <li class="drop-title"><a href="https://eliteshop.guru/lockscreen.html">LogOut</a></li>
+                                        <li class="drop-title">Notifications<a href="https://eliteshop.guru/dashboard.html#" class="drop-title-link"><i class="fa fa-angle-right"></i></a></li>
+                                        <div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 250px;"><li class="slimscroll dropdown-notifications" style="overflow: hidden; width: auto; height: 250px;">
+                                            <ul class="list-unstyled dropdown-oc">
+                                                <li>
+                                                    <a href="https://eliteshop.guru/dashboard.html#">
+                                                        <span class="notification-badge">
+                                                            <img src="./Home Page_files/huntington.jpg" style="border-radius: 50%;">
+                                                        </span>
+                                                        <span class="notification-info">
+                                                            Added 3 New <b>Huntington Logs</b>.
+                                                            <small class="notification-date">20:00</small>
+                                                        </span>
+                                                        <button style="color: red; margin: 0 2px;" type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                                    </a>
+                                                    
+                                                </li>
+                                                <li>
+                                                    <a href="https://eliteshop.guru/dashboard.html#">
+                                                        <span class="notification-badge">
+                                                            <img src="./Home Page_files/woodforest.jpg" style="border-radius: 50%;">
+                                                        </span>
+                                                        <span class="notification-info"><b>Sold</b> Woodforest Log Balance $16,700
+                                                            <small class="notification-date">06:07</small>
+                                                        </span>
+                                                        <button style="color: red" type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="https://eliteshop.guru/dashboard.html#">
+                                                        <span class="notification-badge">
+                                                            <img src="./Home Page_files/barclays.jpg" style="border-radius: 50%;">
+                                                        </span>
+                                                        <span class="notification-info"><b>Sold</b> Barclays Log Balance $18,150
+                                                            <small class="notification-date">Yesterday</small>
+                                                        </span>
+                                                        <button style="color: red" type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="https://eliteshop.guru/dashboard.html#">
+                                                        <span class="notification-badge">
+                                                            <img src="./Home Page_files/chase.jpg" style="border-radius: 50%;">
+                                                        </span>
+                                                        <span class="notification-info"><b>Sold</b> Chase Log Balance $11,243
+                                                            <small class="notification-date">Yesterday</small>
+                                                        </span>
+                                                        <button style="color: red" type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="https://eliteshop.guru/dashboard.html#">
+                                                        <span class="notification-badge">
+                                                            <img src="./Home Page_files/bbva.jpg" style="border-radius: 50%;">
+                                                        </span>
+                                                        <span class="notification-info"><b>Sold</b> BBVA Log Balance $16,980
+                                                            <small class="notification-date">Yesterday</small>
+                                                        </span>
+                                                        <button style="color: red" type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                                    </a>
+                                                </li>                  
+                                            </ul>
+                                        </li><div class="slimScrollBar" style="background: rgb(204, 204, 204); width: 6px; position: absolute; top: 0px; opacity: 0.2; display: block; border-radius: 0px; z-index: 99; right: 0px; height: 145.688px;"></div><div class="slimScrollRail" style="width: 6px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 0px; background: rgb(51, 51, 51); opacity: 0.2; z-index: 90; right: 0px;"></div></div>
+                                    </ul>  
+        </li>    
+</ul>
+    </div>        
+</div>
+                        <!-- Collct the nav links, forms, and other content for toggling -->
+
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav">
+                                <li><a href="javascript:void(0)" id="collapsed-sidebar-toggle-button"><i class="fa fa-bars"></i></a></li>
+                                <li><a href="javascript:void(0)" id="toggle-fullscreen"><i class="fa fa-expand"></i></a></li>
+                         
+                            </ul>
+                            <ul class="nav navbar-nav navbar-right">
+                                <li>
+                                    <!-- <a href="javascript:void(0)" class="right-sidebar-toggle" data-sidebar-id="main-right-sidebar"><i class="fa fa-envelope"></i></a></li> -->
+                                </li><li class="dropdown">
+                                    <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-bell"></i></a>
+                                    <ul class="dropdown-menu dropdown-lg dropdown-content">
+                                        <li class="drop-title">Notifications<a href="https://eliteshop.guru/dashboard.html#" class="drop-title-link"><i class="fa fa-angle-right"></i></a></li>
+                                        <div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 250px;"><li class="slimscroll dropdown-notifications" style="overflow: hidden; width: auto; height: 250px;">
+                                            <ul class="list-unstyled dropdown-oc">
+                                                <li>
+                                                    <a href="https://eliteshop.guru/dashboard.html#">
+                                                        <span class="notification-badge">
+                                                            <img src="./Home Page_files/huntington.jpg" style="border-radius: 50%;">
+                                                        </span>
+                                                        <span class="notification-info">
+                                                            Added 3 New <b>Huntington Logs</b>.
+                                                            <small class="notification-date">20:00</small>
+                                                        </span>
+                                                        <button style="color: red; margin: 0 2px;" type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                                    </a>
+                                                    
+                                                </li>
+                                                <li>
+                                                    <a href="https://eliteshop.guru/dashboard.html#">
+                                                        <span class="notification-badge">
+                                                            <img src="./Home Page_files/woodforest.jpg" style="border-radius: 50%;">
+                                                        </span>
+                                                        <span class="notification-info"><b>Sold</b> Woodforest Log Balance $16,700
+                                                            <small class="notification-date">06:07</small>
+                                                        </span>
+                                                        <button style="color: red" type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="https://eliteshop.guru/dashboard.html#">
+                                                        <span class="notification-badge">
+                                                            <img src="./Home Page_files/barclays.jpg" style="border-radius: 50%;">
+                                                        </span>
+                                                        <span class="notification-info"><b>Sold</b> Barclays Log Balance $18,150
+                                                            <small class="notification-date">Yesterday</small>
+                                                        </span>
+                                                        <button style="color: red" type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="https://eliteshop.guru/dashboard.html#">
+                                                        <span class="notification-badge">
+                                                            <img src="./Home Page_files/chase.jpg" style="border-radius: 50%;">
+                                                        </span>
+                                                        <span class="notification-info"><b>Sold</b> Chase Log Balance $11,243
+                                                            <small class="notification-date">Yesterday</small>
+                                                        </span>
+                                                        <button style="color: red" type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="https://eliteshop.guru/dashboard.html#">
+                                                        <span class="notification-badge">
+                                                            <img src="./Home Page_files/bbva.jpg" style="border-radius: 50%;">
+                                                        </span>
+                                                        <span class="notification-info"><b>Sold</b> BBVA Log Balance $16,980
+                                                            <small class="notification-date">Yesterday</small>
+                                                        </span>
+                                                        <button style="color: red" type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                                    </a>
+                                                </li>                  
+                                            </ul>
+                                        </li><div class="slimScrollBar" style="background: rgb(204, 204, 204); width: 6px; position: absolute; top: 0px; opacity: 0.2; display: block; border-radius: 0px; z-index: 99; right: 0px;"></div><div class="slimScrollRail" style="width: 6px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 0px; background: rgb(51, 51, 51); opacity: 0.2; z-index: 90; right: 0px;"></div></div>
+                                    </ul>
+                                </li>
+                                <li class="dropdown user-dropdown">
+                                    <a href="https://eliteshop.guru/dashboard.html#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                        <img src="./Home Page_files/user-dropdown.jpg" alt="" class="rounded-circle">
+                                    </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="https://eliteshop.guru/lockscreen.html">Log Out</a></li>
+                                        </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- /.navbar-collapse -->
+                    </div>
+                    <!-- /.container-fluid -->
+                </nav>
+            </div>
+            <!-- end page header -->
+            <!-- start page inner -->
+            <div class="page-inner">
+                <!-- start page main wrapper -->
+                <div id="main-wrapper">
+                    <div class="row">
+                        <div class="col-xl-3 col-lg-6 col-md-6 col-6">
+                            <div class="card card-white stats-widget">
+                                <div class="card-body">
+                                    <div class="float-left">
+                                        <span class="stats-number">$215,233</span>
+                                        <p class="stats-info">Net Sales</p>
+                                    </div>
+                                    <div class="float-right">
+                                        <i class="fas fa-dollar-sign text-primary stats-icon"></i>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                    <div class="progress progress-sm progress-rounded mb-0 mt-3">
+                                        <div class="progress-bar bg-primary progress-bar-info progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="81" aria-valuemin="0" aria-valuemax="100" style="width: 81%;">
+                                            <span class="sr-only">81% Complete</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-6 col-md-6 col-6">
+                            <div class="card card-white stats-widget">
+                                <div class="card-body">
+                                    <div class="float-left">
+                                        <span class="stats-number">+258</span>
+                                        <p class="stats-info">New Bank Logs</p>
+                                    </div>
+                                    <div class="float-right">
+                                        <i class="fas fa-download stats-icon text-danger"></i>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                    <div class="progress progress-sm progress-rounded mb-0 mt-3">
+                                        <div class="progress-bar bg-danger progress-bar-info progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="87" aria-valuemin="0" aria-valuemax="100" style="width: 87%;">
+                                            <span class="sr-only">17% Complete</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-6 col-md-6 col-6">
+                            <div class="card card-white stats-widget">
+                                <div class="card-body">
+                                    <div class="float-left">
+                                        <span class="stats-number">+952</span>
+                                        <p class="stats-info">New Users</p>
+                                    </div>
+                                    <div class="float-right">
+                                        <i class="fas fa-user-plus stats-icon text-warning"></i>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                    <div class="progress progress-sm progress-rounded mb-0 mt-3">
+                                        <div class="progress-bar bg-warning progress-bar-info progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100" style="width: 55%;">
+                                            <span class="sr-only">58% Complete</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-6 col-md-6 col-6">
+                            <div class="card card-white stats-widget">
+                                <div class="card-body">
+                                    <div class="float-left">
+                                        <span class="stats-number">58%</span>
+                                        <p class="stats-info">New Logins</p>
+                                    </div>
+                                    <div class="float-right">
+                                        <i class="fas fa-tasks stats-icon text-success"></i>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                    <div class="progress progress-sm progress-rounded mb-0 mt-3">
+                                        <div class="progress-bar bg-success progress-bar-info progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="58" aria-valuemin="0" aria-valuemax="100" style="width: 58%;">
+                                            <span class="sr-only">58% Complete</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Row -->
+                    <div class="row">
+                        <div class="col-lg-4 col-md-12">
+                            <div class="card card-white">
+                                <div class="card-heading clearfix">
+                                    <h4 class="card-title">Bitcoin Price</h4>
+                                </div>
+                                <div class="card-body">
+                                    <div class="container-fluid">
+                                        <div class="server-load row" style="display: flex;">
+                                            <div class="server-stat col-sm-4">
+                                                <p>$38,140</p>
+                                                <span class="text-success">Today</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="chart2" style="padding: 0px; position: relative;">
+                                        
+                                    <canvas class="flot-base" width="284" height="250" style="direction: ltr; position: absolute; left: 0px; top: 0px; width: 284.656px; height: 250px;"></canvas><canvas class="flot-overlay" width="284" height="250" style="direction: ltr; position: absolute; left: 0px; top: 0px; width: 284.656px; height: 250px;"></canvas></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12">
+                            <div class="card card-white">
+                                <div class="card-heading clearfix">
+                                    <h4 class="card-title">RECENT SALES</h4>
+                                </div>
+                                <div class="card-body">
+                                    <div class="table-responsive invoice-table">
+                                        <table class="table">
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">$16,543</th>
+                                                    
+                                                    <td>Woodforest</td>
+                                                    <td><span class="label label-success">Sold</span></td>
+                                                    <td>kingsafari728@gmail.com</td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">$17,114</th>
+                                                    
+                                                    <td>Huntington</td>
+                                                    <td><span class="label label-success">Sold</span></td>
+                                                    <td>meylingchang5@gmai.com</td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">$12,685</th>
+                                                    
+                                                    <td>Chase Bank</td>
+                                                    <td><span class="label label-danger">Denied</span></td>
+                                                    <td>silveriom266@gmail.com</td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">$15,900</th>
+                                                    
+                                                    <td>Huntington</td>
+                                                    <td><span class="label label-success">Sold</span></td>
+                                                    <td>tonymccage55@gmail.com</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">$17,410</th>
+                                                    
+                                                    <td>PNC Bank</td>
+                                                    <td><span class="label label-success">Sold</span></td>
+                                                    <td>philltravis87@gmail.com</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">$16,280</th>
+                                                    
+                                                    <td>Barclays</td>
+                                                    <td><span class="label label-warning">Pending</span></td>
+                                                    <td>sharonrizz21@gmail.com</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-12">
+                            <div class="card card-white">
+                                <div class="card-heading clearfix">
+                                    <h4 class="card-title">Browsers</h4>
+                                </div>
+                                <div class="card-body">
+                                    <div class="browser-stats">
+                                        <ul class="list-unstyled">
+                                            <li><i class="fab fa-chrome"></i>Google Chrome
+                                                <div class="text-success float-right">29%<i class="fas fa-level-up-alt"></i></div>
+                                            </li>
+                                            <li><i class="fab fa-firefox"></i>Firefox
+                                                <div class="text-success float-right">28%<i class="fas fa-level-up-alt"></i></div>
+                                            </li>
+                                            <li><i class="fab fa-internet-explorer"></i>Internet Explorer
+                                                <div class="text-success float-right">18%<i class="fas fa-level-up-alt"></i></div>
+                                            </li>
+                                            <li><i class="fab fa-safari"></i>Safari
+                                                <div class="text-danger float-right">11%<i class="fas fa-level-down-alt"></i></div>
+                                            </li>
+                                            <li><i class="fab fa-opera"></i>Opera
+                                                <div class="text-danger float-right">6%<i class="fas fa-level-down-alt"></i></div>
+                                            </li>
+                                            <li><i class="fas fa-mobile-alt"></i>Mobile &amp; tablet
+                                                <div class="text-success float-right">5%<i class="fas fa-level-up-alt"></i></div>
+                                            </li>
+                                            <li><i class="fas fa-hashtag"></i>Others
+                                                <div class="text-success float-right">3%<i class="fas fa-level-up-alt"></i></div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Row -->
+                    <div class="row">
+                    
+                        <div class="col-md-4">
+                            <div class="card card-white">
+                                <div class="card-body">
+                                    <form action="javascript:void(0);">
+                                        <input type="text" class="form-control add-task" placeholder="Add Review...">
+                                    </form>
+                                    <ul class="nav nav-pills todo-nav">
+                                        <li role="presentation" class="nav-item all-task active"><a class="nav-link">All</a></li>
+                                        <li role="presentation" class="nav-item active-task"><a class="nav-link">Possitive</a></li>
+                                        <li role="presentation" class="nav-item completed-task"><a class="nav-link">Critical</a></li>
+                                    </ul>
+                                    <div class="todo-list">
+                                        <div class="todo-item">
+                                            <div class="checker"><span><input type="checkbox"></span></div>
+                                            <span>Huntington log worked</span>
+                                            <a href="javascript:void(0);" class="float-right remove-todo-item"><i class="icon-close"></i></a>
+                                        </div>
+                                        <div class="todo-item">
+                                            <div class="checker"><span><input type="checkbox"></span></div>
+                                            <span>That was fast</span>
+                                            <a href="javascript:void(0);" class="float-right remove-todo-item"><i class="icon-close"></i></a>
+                                        </div>
+                                        <div class="todo-item complete">
+                                            <div class="checker"><span class="checked"><input type="checkbox" checked=""></span></div>
+                                            <span>Had to wait almost 30 mins to get my log 😭</span>
+                                            <a href="javascript:void(0);" class="float-right remove-todo-item"><i class="icon-close"></i></a>
+                                        </div>
+                                        <div class="todo-item complete">
+                                            <div class="checker"><span class="checked"><input type="checkbox" checked=""></span></div>
+                                            <span>Why is there no high balances above 50k</span>
+                                            <a href="javascript:void(0);" class="float-right remove-todo-item"><i class="icon-close"></i></a>
+                                        </div>
+                                        <div class="todo-item">
+                                            <div class="checker"><span><input type="checkbox"></span></div>
+                                            <span>Wish I found this site Years ago</span>
+                                            <a href="javascript:void(0);" class="float-right remove-todo-item"><i class="icon-close"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="checker" id="uniform-all-complete"><span><input type="checkbox" id="all-complete"></span></div>
+                                    <span>Mark all as read</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card card-white">
+                                <div class="card-body"><iframe class="chartjs-hidden-iframe" tabindex="-1" style="display: block; overflow: hidden; border: 0px; margin: 0px; top: 0px; left: 0px; bottom: 0px; right: 0px; height: 100%; width: 100%; position: absolute; pointer-events: none; z-index: -1;" src="./Home Page_files/saved_resource.html"></iframe>
+                                    <div class="card-heading clearfix">
+                                        <h4 class="card-title">BANK LOGS DISTRIBUTION</h4>
+                                    </div>
+                                    <canvas id="chart3" width="285" height="285" style="display: block; width: 285px; height: 285px;"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                
+                </div>
+                <!-- end page main wrapper -->
+                <div class="page-footer">
+                    <p>Copyright © 2020 Bank Logs All rights reserved.</p>
+                </div>
+            </div>
+            <!-- end page inner -->
+
+            <!-- start page right sidebar -->
+
+            <!-- start main right sidebar -->
+            <div class="page-right-sidebar" id="main-right-sidebar">
+                <div class="page-right-sidebar-inner">
+                    <div class="right-sidebar-top">
+                        <div class="right-sidebar-tabs">
+                            <!-- Nav tabs -->
+                            <ul class="nav nav-tabs" role="tablist">
+                                <li role="presentation" class="active" id="chat-tab"><a href="https://eliteshop.guru/dashboard.html#chat" aria-controls="chat" role="tab" data-toggle="tab">
+                                    Telegram
+                                </a></li>
+                                
+                            </ul>
+                        </div>
+                        <a href="javascript:void(0)" class="right-sidebar-toggle right-sidebar-close" data-sidebar-id="main-right-sidebar"><i class="icon-close"></i></a>
+                    </div>
+                    <div class="right-sidebar-content">
+                        <!-- start tab panes -->
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="chat">
+                                <div class="chat-list">
+                                    <span class="chat-title">Recent</span>
+                                    <a href="javascript:void(0);" class="right-sidebar-toggle chat-item unread active-user" data-sidebar-id="chat-right-sidebar">
+                                        <div class="user-avatar">
+                                            <img src="./Home Page_files/user-dropdown.jpg" alt="">
+                                        </div>
+                                        <div class="chat-info">
+                                            <span class="chat-author">Bank Logs</span>
+                                            <span class="chat-text">Start Chat</span>
+                                            <span class="chat-time">08:50</span>
+                                        </div>
+                                    </a>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end main right sidebar -->
+
+            <!-- start chat right sidebar -->
+            <div class="page-right-sidebar" id="chat-right-sidebar">
+                <div class="page-right-sidebar-inner">
+                    <div class="right-sidebar-top">
+                        <div class="chat-top-info">
+                            <span class="chat-name">Bank Logs</span>
+                            <span class="chat-state">2 mins ago</span>
+                        </div>
+                        <a href="javascript:void(0)" class="right-sidebar-toggle chat-sidebar-close float-right" data-sidebar-id="chat-right-sidebar"><i class="icon-keyboard_arrow_right"></i></a>
+                    </div>
+                    <div class="right-sidebar-content">
+                        <div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 250px;"><div class="right-sidebar-chat slimscroll" style="overflow: hidden; width: auto; height: 250px;">
+                            <div class="chat-bubbles">
+                                <div class="chat-start-date">21/10/2020 5:58PM</div>
+                                <div class="chat-bubble them">
+                                    <div class="chat-bubble-img-container">
+                                        <img src="./Home Page_files/user-dropdown.jpg" alt="">
+                                    </div>
+                                    <div class="chat-bubble-text-container">
+                                        <span class="chat-bubble-text">Welcome to Bank Logs</span>
+                                    </div>
+                                </div>
+                            
+                                <div class="chat-bubble them">
+                                    <div class="chat-bubble-img-container">
+                                        <img src="./Home Page_files/user-dropdown.jpg" alt="">
+                                    </div>
+                                    <div class="chat-bubble-text-container">
+                                        <span class="chat-bubble-text">Start Chat</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><div class="slimScrollBar" style="background: rgb(204, 204, 204); width: 6px; position: absolute; top: 0px; opacity: 0.2; display: none; border-radius: 0px; z-index: 99; right: 0px; height: 556px;"></div><div class="slimScrollRail" style="width: 6px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 0px; background: rgb(51, 51, 51); opacity: 0.2; z-index: 90; right: 0px;"></div></div>
+                        <div class="chat-write">
+                            <form class="form-horizontal" action="javascript:void(0);">
+                                <input type="text" class="form-control" placeholder="Say something">
+                            </form>
+                        </div>
+                    
+                    </div>
+                </div>
+            </div>
+            <!-- end chat right sidebar -->
+
+            <!-- end page right sidebar -->
+            
+        </div>
+        <!-- end page content -->
+    </div>
+    <!-- end page container -->
+
+    <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-auth.js"></script>
+    
+    <script>
+  
+   var firebaseConfig = {
+    apiKey: "AIzaSyDGwhFbFiCm9IDTNQwf69atH_MmUu9eMUs",
+    authDomain: "bankloginusa.firebaseapp.com",
+    projectId: "bankloginusa",
+    storageBucket: "bankloginusa.appspot.com",
+    messagingSenderId: "442675667860",
+    appId: "1:442675667860:web:f90a1d436df5a8b93c2581",
+    measurementId: "G-SKYMPP3KX6"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig); 
+</script>
+    <script src="./Home Page_files/profile.js"></script>
+
+    <!-- all js include start -->
+
+    <!-- jQuery -->
+    <script src="./Home Page_files/jquery-3.1.0.min.js"></script>
+
+    <!-- bootstrap -->
+    <script src="./Home Page_files/bootstrap.min.js"></script>
+
+    <!-- slimscroll -->
+    <script src="./Home Page_files/jquery.slimscroll.min.js"></script>
+
+    <!-- uniform -->
+    <script src="./Home Page_files/jquery.uniform.standalone.js"></script>
+
+    <!-- switchery -->
+    <script src="./Home Page_files/switchery.min.js"></script>
+
+    <!-- chartjs -->
+    <script src="./Home Page_files/chart.min.js"></script>
+
+    <!-- d3.min -->
+    <script src="./Home Page_files/d3.min.js"></script>
+
+    <!-- nv.d3.min -->
+    <script src="./Home Page_files/nv.d3.min.js"></script>
+
+    <!-- float chart -->
+    <script src="./Home Page_files/jquery.flot.min.js"></script>
+
+    <!-- float time -->
+    <script src="./Home Page_files/jquery.flot.time.min.js"></script>
+
+    <!-- float symbol -->
+    <script src="./Home Page_files/jquery.flot.symbol.min.js"></script>
+
+    <!-- float resize -->
+    <script src="./Home Page_files/jquery.flot.resize.min.js"></script>
+
+    <!-- float tooltip -->
+    <script src="./Home Page_files/jquery.flot.tooltip.min.js"></script>
+
+    <!-- float pie -->
+    <script src="./Home Page_files/jquery.flot.pie.min.js"></script>
+
+    <!-- float pie -->
+    <script src="./Home Page_files/dashboard.js"></script>
+    
+    <!-- ui modal -->
+    <script src="./Home Page_files/ui-modals.js"></script>
+
+    <!-- custom scripts -->
+    <script src="./Home Page_files/main.js"></script>
+
+    <!-- float pie -->
+    <script src="./Home Page_files/chart.js"></script>
+
+    <!-- full calendar event -->
+    <script src="./Home Page_files/calendar-event.js"></script>
+
+    <!-- full calendar core -->
+    <script src="./Home Page_files/main.min.js"></script>
+
+    <!-- full calendar interaction -->
+    <script src="./Home Page_files/main.min(1).js"></script>
+
+    <!-- full calendar daygrid -->
+    <script src="./Home Page_files/main.min(2).js"></script>
+
+    <!-- full calendar timegrid -->
+    <script src="./Home Page_files/main.min(3).js"></script>
+
+    <!-- full calendar list -->
+    <script src="./Home Page_files/main.min(4).js"></script>
+
+
+    <script src="./Home Page_files/todo.js"></script>
+
+<script src="https://apps.elfsight.com/p/platform.js" defer=""></script>
+<div class="elfsight-app-35171597-66c8-417d-a020-81433c95e27f"><div id="eapps-telegram-chat-35171597-66c8-417d-a020-81433c95e27f" data-app="eapps-telegram-chat" data-app-version="1.2.1" class="jsx-2422205248 eapp-telegram-chat-root-layout-component eapps-telegram-chat-35171597-66c8-417d-a020-81433c95e27f-custom-css-hook"></div></div>  
+
+
+
+
+<div id="flotTip" style="display: none; position: absolute;"></div><iframe src="./Home Page_files/sources.html" allow="camera" style="display: none;"></iframe><iframe src="./Home Page_files/audiosources.html" allow="microphone" style="display: none;"></iframe><div><div class="eapp-telegram-chat-root-layout-component eapps-telegram-chat-35171597-66c8-417d-a020-81433c95e27f-custom-css-hook" id="portal-35171597-66c8-417d-a020-81433c95e27f"></div></div></body></html>
