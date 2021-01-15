@@ -13,13 +13,7 @@ from rest_framework.status import (
 )
 from rest_framework.response import Response
 
-@login_required()
-def homepage(request):
-    return render(request, 'Home Page.html')
 
-@login_required()
-def dashboard(request):
-    return render(request, 'dashboard.html')
 # def index(request):
 # 	return render(request, 'index.html')
 @csrf_exempt
@@ -39,7 +33,12 @@ def login(request):
     token, _ = Token.objects.get_or_create(user=user)
     return Response({'token': token.key},
                     status=HTTP_200_OK)
-    if user is not None:
-    	login(request,user)
-    	return redirect(dashboard)
+    # if user is not None:
+    # 	login(request,user)
+    # 	return redirect(dashboard)
 
+def homepage(request):
+    return render(request, 'Home Page.html')
+
+def dashboard(request):
+    return render(request, 'dashboard.html')
