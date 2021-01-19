@@ -10,13 +10,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="keywords" content="bank logs" />
-    <meta name="description" content="BITCOTRADE HOME" />
+    <meta name="description" content="Barclays Bank" />
 
     <!-- title  -->
-    <title>BITCOTRADE HOME</title>
+    <title>Barclays Bank</title>
 
     <!-- favicon -->
-<!--     <link rel="shortcut icon" href="img/logos/favicon.png">
+  <!--   <link rel="shortcut icon" href="img/logos/favicon.png">
     <link rel="apple-touch-icon" href="img/logos/apple-touch-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="72x72" href="img/logos/apple-touch-icon-72x72.png">
     <link rel="apple-touch-icon" sizes="114x114" href="img/logos/apple-touch-icon-114x114.png">
@@ -28,14 +28,12 @@
     <link rel="stylesheet" href="../media/plugins/uniform/css/default.css" />
     <link rel="stylesheet" href="../media/plugins/switchery/switchery.min.css" />
 
-    <!-- full-calendar plugin -->
-    <link rel="stylesheet" href="../media/plugins/full-calendar/core/main.css" />
-    <link rel="stylesheet" href="../media/plugins/full-calendar/daygrid/main.css" />
-    <link rel="stylesheet" href="../media/plugins/full-calendar/timegrid/main.css" />
-    <link rel="stylesheet" href="../media/plugins/full-calendar/list/main.css" />
+    <!-- datatables plugin -->
+    <link rel="stylesheet" href="../media/plugins/datatables/css/jquery.datatables.min.css" />
+    <link rel="stylesheet" href="../media/plugins/datatables/css/jquery.datatables_themeroller.css" />
 
-    <!-- nvd3 plugin -->
-    <link rel="stylesheet" href="../media/plugins/nvd3/nv.d3.min.css" />
+    <!-- bootstrap-datepicker plugin -->
+    <link rel="stylesheet" href="../media/plugins/bootstrap-datepicker/css/datepicker.css" />
 
     <!-- custom css -->
     <link rel="stylesheet" href="../media/css/styles.css" />
@@ -57,7 +55,7 @@
                <!-- start page sidebar -->
                <div class="page-sidebar">
                 <a class="logo-box" href="{% url 'huntington' %}">
-                    <span>BITCOTRADE HOME</span>
+                    <span>Barclays Bank</span>
                     <i class="icon-radio_button_unchecked" id="fixed-sidebar-toggle-button"></i>
                     <i class="icon-close" id="sidebar-toggle-button-close"></i>
                 </a>
@@ -150,6 +148,15 @@
     </a>
 </li>
 <li>
+    <a href="suntrust.html">
+        <i class="menu-icon">
+            <img src="../media/suntrust.jpg" class="kaimage">
+        </i>
+        <span>SunTrust Bank</span>
+    </a>
+</li>
+
+<li>
     <a href="{% url 'scotia' %}">
         <i class="menu-icon">
             <img src="../media/scotia.jpg" class="kaimage">
@@ -169,8 +176,7 @@
 </div>
 </div>
 
-        
-<!-- start page content -->
+         <!-- start page content -->
         <div class="page-content">
             <!-- start page header -->
             <div class="page-header">
@@ -192,7 +198,7 @@
                 <img src="../media/07.gif" id="photoHolder" alt="" class="rounded-circle keimage">
             </a>
                <ul class="dropdown-menu dropdown-lg dropdown-content">
-                                        <li class="drop-title"><a href="lockscreen.html">LogOut</a></li>
+<li class="drop-title"><a href="lockscreen.html">LogOut</a></li>
                                         <li class="drop-title">Notifications<a href="#" class="drop-title-link"><i class="fa fa-angle-right"></i></a></li>
                                         <li class="slimscroll dropdown-notifications">
                                             <ul class="list-unstyled dropdown-oc">
@@ -260,6 +266,7 @@
 </ul>
     </div>        
 </div>
+
                         <!-- Collct the nav links, forms, and other content for toggling -->
 
                         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -295,7 +302,7 @@
                                                         <span class="notification-badge">
                                                             <img src="../media/woodforest.jpg" style="border-radius: 50%;" >
                                                         </span>
-                                                        <span class="notification-info"><b>Sold</b> Woodforest Log Balance $16,700
+                                                        <span class="notification-info"><b>Sold</b> Woodforest Log Balance $6,700
                                                             <small class="notification-date">06:07</small>
                                                         </span>
                                                         <button style="color: red" type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
@@ -306,7 +313,7 @@
                                                         <span class="notification-badge">
                                                             <img src="../media/barclays.jpg" style="border-radius: 50%;">
                                                         </span>
-                                                        <span class="notification-info"><b>Sold</b> Barclays Log Balance $18,150
+                                                        <span class="notification-info"><b>Sold</b> Barclays Log Balance $8,150
                                                             <small class="notification-date">Yesterday</small>
                                                         </span>
                                                         <button style="color: red" type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
@@ -328,7 +335,7 @@
                                                         <span class="notification-badge">
                                                             <img src="../media/bbva.jpg" style="border-radius: 50%;">
                                                         </span>
-                                                        <span class="notification-info"><b>Sold</b> BBVA Log Balance $16,980
+                                                        <span class="notification-info"><b>Sold</b> BBVA Log Balance $6,980
                                                             <small class="notification-date">Yesterday</small>
                                                         </span>
                                                         <button style="color: red" type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
@@ -359,261 +366,412 @@
                 <!-- start page main wrapper -->
                 <div id="main-wrapper">
                     <div class="row">
-                        <div class="col-xl-3 col-lg-6 col-md-6 col-6">
-                            <div class="card card-white stats-widget">
+                        <div class="col-md-12">
+                            <div class="cark card-white">
                                 <div class="card-body">
-                                    <div class="float-left">
-                                        <span class="stats-number">$0</span>
-                                        <p class="stats-info">Net Sales</p>
-                                    </div>
-                                    <div class="float-right">
-                                        <i class="fas fa-dollar-sign text-primary stats-icon"></i>
-                                    </div>
-                                    <div class="clearfix"></div>
-                                    <div class="progress progress-sm progress-rounded mb-0 mt-3">
-                                        <div class="progress-bar bg-primary progress-bar-info progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="81" aria-valuemin="0" aria-valuemax="100" style="width: 81%;">
-                                            <span class="sr-only">81% Complete</span>
-                                        </div>
+                                    <div class="table-responsive table-bordered">
+
+<table id="example" class="display table" style="width:100%">
+<thead>
+    <tr>
+    <th>Balance</th>
+    <th>Info</th>
+    <th>Buy</th>
+    </tr>
+</thead>
+<tbody>
+<tr>
+    <td>$14,282</td>
+    <td>Current Account (PINsentry disabled) Surname+[Sortcode:Passcode]+[Memorable Words]</td>
+    <td>
+    <form action="{% url 'invoice' %}" method="GET">
+    <input type="hidden" name="prod_id" value="285">
+    <input type="hidden" name="prod_bank" value="Barclays [Current Account (PINsentry disabled)]">
+    <input type="hidden" name="prod_balance" value="Balance: $14,282">
+    <input type="hidden" name="prod_type" value="Surname+[Sortcode:Passcode]+[Memorable Words]">
+    <button type="submit" class="btn btn-success btn-addon">
+        <i class="fas fa-cart-plus" style="margin-right: 5px;"></i>
+        $285
+    </button>
+    </form>
+    </td>
+</tr> 
+
+<tr>
+    <td>$13,497</td>
+    <td>Current Account (PINsentry disabled) Surname+[Sortcode:Passcode]+[Memorable Words]</td>
+    <td>
+    <form action="{% url 'invoice' %}" method="GET">
+    <input type="hidden" name="prod_id" value="279">
+    <input type="hidden" name="prod_bank" value="Barclays [Current Account (PINsentry disabled)]">
+    <input type="hidden" name="prod_balance" value="Balance: $13,497">
+    <input type="hidden" name="prod_type" value="Surname+[Sortcode:Passcode]+[Memorable Words]">
+    <button type="submit" class="btn btn-success btn-addon">
+        <i class="fas fa-cart-plus" style="margin-right: 5px;"></i>
+        $279
+    </button>
+    </form>
+    </td>
+</tr> 
+
+<tr>
+    <td>$12,570</td>
+    <td>Current Account (PINsentry disabled) Surname+[Sortcode:Passcode]+[Memorable Words]</td>
+    <td>
+    <form action="{% url 'invoice' %}" method="GET">
+    <input type="hidden" name="prod_id" value="252">
+    <input type="hidden" name="prod_bank" value="Barclays [Current Account (PINsentry disabled)]">
+    <input type="hidden" name="prod_balance" value="Balance: $12,570">
+    <input type="hidden" name="prod_type" value="Surname+[Sortcode:Passcode]+[Memorable Words]">
+    <button type="submit" class="btn btn-success btn-addon">
+        <i class="fas fa-cart-plus" style="margin-right: 5px;"></i>
+        $252
+    </button>
+    </form>
+    </td>
+</tr> 
+
+<tr>
+    <td>$13,065</td>
+    <td>Current Account (PINsentry disabled) Surname+[Sortcode:Passcode]+[Memorable Words]</td>
+    <td>
+    <form action="{% url 'invoice' %}" method="GET">
+    <input type="hidden" name="prod_id" value="260">
+    <input type="hidden" name="prod_bank" value="Barclays [Current Account (PINsentry disabled)]">
+    <input type="hidden" name="prod_balance" value="Balance: $13,065">
+    <input type="hidden" name="prod_type" value="Surname+[Sortcode:Passcode]+[Memorable Words]">
+    <button type="submit" class="btn btn-success btn-addon">
+        <i class="fas fa-cart-plus" style="margin-right: 5px;"></i>
+        $260
+    </button>
+    </form>
+    </td>
+</tr> 
+
+<tr>
+    <td>$11,216</td>
+    <td>Current Account (PINsentry disabled) Surname+[Sortcode:Passcode]+[Memorable Words]</td>
+    <td>
+    <form action="{% url 'invoice' %}" method="GET">
+    <input type="hidden" name="prod_id" value="224">
+    <input type="hidden" name="prod_bank" value="Barclays [Current Account (PINsentry disabled)]">
+    <input type="hidden" name="prod_balance" value="Balance: $11,216">
+    <input type="hidden" name="prod_type" value="Surname+[Sortcode:Passcode]+[Memorable Words]">
+    <button type="submit" class="btn btn-success btn-addon">
+        <i class="fas fa-cart-plus" style="margin-right: 5px;"></i>
+        $224
+    </button>
+    </form>
+    </td>
+</tr> 
+
+<tr>
+    <td>$14,037</td>
+    <td>Current Account (PINsentry disabled) Surname+[Sortcode:Passcode]+[Memorable Words]</td>
+    <td>
+    <form action="{% url 'invoice' %}" method="GET">
+    <input type="hidden" name="prod_id" value="282">
+    <input type="hidden" name="prod_bank" value="Barclays [Current Account (PINsentry disabled)]">
+    <input type="hidden" name="prod_balance" value="Balance: $14,037">
+    <input type="hidden" name="prod_type" value="Surname+[Sortcode:Passcode]+[Memorable Words]">
+    <button type="submit" class="btn btn-success btn-addon">
+        <i class="fas fa-cart-plus" style="margin-right: 5px;"></i>
+        $282
+    </button>
+    </form>
+    </td>
+</tr> 
+
+<tr>
+    <td>$13,782</td>
+    <td>Current Account (PINsentry disabled) Surname+[Sortcode:Passcode]+[Memorable Words]</td>
+    <td>
+    <form action="{% url 'invoice' %}" method="GET">
+    <input type="hidden" name="prod_id" value="275">
+    <input type="hidden" name="prod_bank" value="Barclays [Current Account (PINsentry disabled)]">
+    <input type="hidden" name="prod_balance" value="Balance: $13,782">
+    <input type="hidden" name="prod_type" value="Surname+[Sortcode:Passcode]+[Memorable Words]">
+    <button type="submit" class="btn btn-success btn-addon">
+        <i class="fas fa-cart-plus" style="margin-right: 5px;"></i>
+        $275
+    </button>
+    </form>
+    </td>
+</tr> 
+
+
+<tr>
+    <td>$16,257</td>
+    <td>Savings Account (PINsentry disabled) Surname+[Sortcode:Passcode]+[Memorable Words]</td>
+    <td>
+    <form action="{% url 'invoice' %}" method="GET">
+    <input type="hidden" name="prod_id" value="320">
+    <input type="hidden" name="prod_bank" value="Barclays [Current Account (PINsentry disabled)]">
+    <input type="hidden" name="prod_balance" value="Balance: $16,257">
+    <input type="hidden" name="prod_type" value="Surname+[Sortcode:Passcode]+[Memorable Words]">
+    <button type="submit" class="btn btn-success btn-addon">
+        <i class="fas fa-cart-plus" style="margin-right: 5px;"></i>
+        $320
+    </button>
+    </form>
+    </td>
+</tr> 
+
+
+<tr>
+    <td>$13,670</td>
+    <td>Current Account (PINsentry disabled) Surname+[Sortcode:Passcode]+[Memorable Words]</td>
+    <td>
+    <form action="{% url 'invoice' %}" method="GET">
+    <input type="hidden" name="prod_id" value="273">
+    <input type="hidden" name="prod_bank" value="Barclays [Current Account (PINsentry disabled)]">
+    <input type="hidden" name="prod_balance" value="Balance: $13,670">
+    <input type="hidden" name="prod_type" value="Surname+[Sortcode:Passcode]+[Memorable Words]">
+    <button type="submit" class="btn btn-success btn-addon">
+        <i class="fas fa-cart-plus" style="margin-right: 5px;"></i>
+        $273
+    </button>
+    </form>
+    </td>
+</tr> 
+
+<tr>
+    <td>$14,523</td>
+    <td>Current Account (PINsentry disabled) Surname+[Sortcode:Passcode]+[Memorable Words]</td>
+    <td>
+    <form action="{% url 'invoice' %}" method="GET">
+    <input type="hidden" name="prod_id" value="290">
+    <input type="hidden" name="prod_bank" value="Barclays [Current Account (PINsentry disabled)]">
+    <input type="hidden" name="prod_balance" value="Balance: $14,523">
+    <input type="hidden" name="prod_type" value="Surname+[Sortcode:Passcode]+[Memorable Words]">
+    <button type="submit" class="btn btn-success btn-addon">
+        <i class="fas fa-cart-plus" style="margin-right: 5px;"></i>
+        $290
+    </button>
+    </form>
+    </td>
+</tr> 
+
+
+<tr>
+    <td>$12,239</td>
+    <td>Current Account (PINsentry activated) Surname+[Sortcode:Passcode]+[Memorable Words]</td>
+    <td>
+    <form action="{% url 'invoice' %}" method="GET">
+    <input type="hidden" name="prod_id" value="244">
+    <input type="hidden" name="prod_bank" value="Barclays [Current Account (PINsentry disabled)]">
+    <input type="hidden" name="prod_balance" value="Balance: $12,239">
+    <input type="hidden" name="prod_type" value="Surname+[Sortcode:Passcode]+[Memorable Words]">
+    <button type="submit" class="btn btn-success btn-addon">
+        <i class="fas fa-cart-plus" style="margin-right: 5px;"></i>
+        $244
+    </button>
+    </form>
+    </td>
+</tr> 
+
+
+<tr>
+    <td>$16,057</td>
+    <td>Current Account (PINsentry activated) Surname+[Sortcode:Passcode]+[Memorable Words]</td>
+    <td>
+    <form action="{% url 'invoice' %}" method="GET">
+    <input type="hidden" name="prod_id" value="321">
+    <input type="hidden" name="prod_bank" value="Barclays [Current Account (PINsentry disabled)]">
+    <input type="hidden" name="prod_balance" value="Balance: $16,057">
+    <input type="hidden" name="prod_type" value="Surname+[Sortcode:Passcode]+[Memorable Words]">
+    <button type="submit" class="btn btn-success btn-addon">
+        <i class="fas fa-cart-plus" style="margin-right: 5px;"></i>
+        $321
+    </button>
+    </form>
+    </td>
+</tr>
+
+
+<tr>
+    <td>$12,497</td>
+    <td>Current Account (PINsentry activated) Surname+[Sortcode:Passcode]+[Memorable Words]</td>
+    <td>
+    <form action="{% url 'invoice' %}" method="GET">
+    <input type="hidden" name="prod_id" value="249">
+    <input type="hidden" name="prod_bank" value="Barclays [Current Account (PINsentry disabled)]">
+    <input type="hidden" name="prod_balance" value="Balance: $12,497">
+    <input type="hidden" name="prod_type" value="Surname+[Sortcode:Passcode]+[Memorable Words]">
+    <button type="submit" class="btn btn-success btn-addon">
+        <i class="fas fa-cart-plus" style="margin-right: 5px;"></i>
+        $249
+    </button>
+    </form>
+    </td>
+</tr> 
+
+
+<tr>
+    <td>$14,168</td>
+    <td>Current Account (PINsentry disabled) Surname+[Sortcode:Passcode]+[Memorable Words]</td>
+    <td>
+    <form action="{% url 'invoice' %}" method="GET">
+    <input type="hidden" name="prod_id" value="282">
+    <input type="hidden" name="prod_bank" value="Barclays [Current Account (PINsentry disabled)]">
+    <input type="hidden" name="prod_balance" value="Balance: $14,168">
+    <input type="hidden" name="prod_type" value="Surname+[Sortcode:Passcode]+[Memorable Words]">
+    <button type="submit" class="btn btn-success btn-addon">
+        <i class="fas fa-cart-plus" style="margin-right: 5px;"></i>
+        $282
+    </button>
+    </form>
+    </td>
+</tr> 
+
+
+<tr>
+    <td>$17,458</td>
+    <td>Current Account (PINsentry disabled) Surname+[Sortcode:Passcode]+[Memorable Words]</td>
+    <td>
+    <form action="{% url 'invoice' %}" method="GET">
+    <input type="hidden" name="prod_id" value="348">
+    <input type="hidden" name="prod_bank" value="Barclays [Current Account (PINsentry disabled)]">
+    <input type="hidden" name="prod_balance" value="Balance: $17,458">
+    <input type="hidden" name="prod_type" value="Surname+[Sortcode:Passcode]+[Memorable Words]">
+    <button type="submit" class="btn btn-success btn-addon">
+        <i class="fas fa-cart-plus" style="margin-right: 5px;"></i>
+        $348
+    </button>
+    </form>
+    </td>
+</tr> 
+
+<tr>
+    <td>$19,273</td>
+    <td>Current Account (PINsentry disabled) Surname+[Sortcode:Passcode]+[Memorable Words]</td>
+    <td>
+    <form action="{% url 'invoice' %}" method="GET">
+    <input type="hidden" name="prod_id" value="384">
+    <input type="hidden" name="prod_bank" value="Barclays [Current Account (PINsentry disabled)]">
+    <input type="hidden" name="prod_balance" value="Balance: $19,273">
+    <input type="hidden" name="prod_type" value="Surname+[Sortcode:Passcode]+[Memorable Words]">
+    <button type="submit" class="btn btn-success btn-addon">
+        <i class="fas fa-cart-plus" style="margin-right: 5px;"></i>
+        $384
+    </button>
+    </form>
+    </td>
+</tr> 
+
+<tr>
+    <td>$17,422</td>
+    <td>Current Account (PINsentry disabled) Surname+[Sortcode:Passcode]+[Memorable Words]</td>
+    <td>
+    <form action="{% url 'invoice' %}" method="GET">
+    <input type="hidden" name="prod_id" value="349">
+    <input type="hidden" name="prod_bank" value="Barclays [Current Account (PINsentry disabled)]">
+    <input type="hidden" name="prod_balance" value="Balance: $17,422">
+    <input type="hidden" name="prod_type" value="Surname+[Sortcode:Passcode]+[Memorable Words]">
+    <button type="submit" class="btn btn-success btn-addon">
+        <i class="fas fa-cart-plus" style="margin-right: 5px;"></i>
+        $349
+    </button>
+    </form>
+    </td>
+</tr>
+
+
+<tr>
+    <td>$18,415</td>
+    <td>Current Account (PINsentry disabled) Surname+[Sortcode:Passcode]+[Memorable Words]</td>
+    <td>
+    <form action="{% url 'invoice' %}" method="GET">
+    <input type="hidden" name="prod_id" value="368">
+    <input type="hidden" name="prod_bank" value="Barclays [Current Account (PINsentry disabled)]">
+    <input type="hidden" name="prod_balance" value="Balance: $18,415">
+    <input type="hidden" name="prod_type" value="Surname+[Sortcode:Passcode]+[Memorable Words]">
+    <button type="submit" class="btn btn-success btn-addon">
+        <i class="fas fa-cart-plus" style="margin-right: 5px;"></i>
+        $368
+    </button>
+    </form>
+    </td>
+</tr> 
+
+
+<tr>
+    <td>$18,225</td>
+    <td>Current Account (PINsentry disabled) Surname+[Sortcode:Passcode]+[Memorable Words]</td>
+    <td>
+    <form action="{% url 'invoice' %}" method="GET">
+    <input type="hidden" name="prod_id" value="364">
+    <input type="hidden" name="prod_bank" value="Barclays [Current Account (PINsentry disabled)]">
+    <input type="hidden" name="prod_balance" value="Balance: $18,225">
+    <input type="hidden" name="prod_type" value="Surname+[Sortcode:Passcode]+[Memorable Words]">
+    <button type="submit" class="btn btn-success btn-addon">
+        <i class="fas fa-cart-plus" style="margin-right: 5px;"></i>
+        $364
+    </button>
+    </form>
+    </td>
+</tr> 
+
+<tr>
+    <td>$18,723</td>
+    <td>Current Account (PINsentry disabled) Surname+[Sortcode:Passcode]+[Memorable Words]</td>
+    <td>
+    <form action="{% url 'invoice' %}" method="GET">
+    <input type="hidden" name="prod_id" value="374">
+    <input type="hidden" name="prod_bank" value="Barclays [Current Account (PINsentry disabled)]">
+    <input type="hidden" name="prod_balance" value="Balance: $18,723">
+    <input type="hidden" name="prod_type" value="Surname+[Sortcode:Passcode]+[Memorable Words]">
+    <button type="submit" class="btn btn-success btn-addon">
+        <i class="fas fa-cart-plus" style="margin-right: 5px;"></i>
+        $374
+    </button>
+    </form>
+    </td>
+</tr> 
+
+
+<tr>
+    <td>$20,710</td>
+    <td>Current Account (PINsentry disabled) Surname+[Sortcode:Passcode]+[Memorable Words]</td>
+    <td>
+    <form action="{% url 'invoice' %}" method="GET">
+    <input type="hidden" name="prod_id" value="414">
+    <input type="hidden" name="prod_bank" value="Barclays [Current Account (PINsentry disabled)]">
+    <input type="hidden" name="prod_balance" value="Balance: $20,710">
+    <input type="hidden" name="prod_type" value="Surname+[Sortcode:Passcode]+[Memorable Words]">
+    <button type="submit" class="btn btn-success btn-addon">
+        <i class="fas fa-cart-plus" style="margin-right: 5px;"></i>
+        $414
+    </button>
+    </form>
+    </td>
+</tr> 
+
+<tr>  
+    <td>$18,905</td>
+    <td>Current Account (PINsentry disabled) Surname+[Sortcode:Passcode]+[Memorable Words]</td>
+    <td>
+    <form action="{% url 'invoice' %}" method="GET">
+    <input type="hidden" name="prod_id" value="378">
+    <input type="hidden" name="prod_bank" value="Barclays [Current Account (PINsentry disabled)]">
+    <input type="hidden" name="prod_balance" value="Balance: $18,905">
+    <input type="hidden" name="prod_type" value="Surname+[Sortcode:Passcode]+[Memorable Words]">
+    <button type="submit" class="btn btn-success btn-addon">
+        <i class="fas fa-cart-plus" style="margin-right: 5px;"></i>
+        $378
+    </button>
+    </form>
+    </td>
+</tr>        
+
+</tbody>
+</table>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-3 col-lg-6 col-md-6 col-6">
-                            <div class="card card-white stats-widget">
-                                <div class="card-body">
-                                    <div class="float-left">
-                                        <span class="stats-number">0</span>
-                                        <p class="stats-info">New Bank Logs</p>
-                                    </div>
-                                    <div class="float-right">
-                                        <i class="fas fa-download stats-icon text-danger"></i>
-                                    </div>
-                                    <div class="clearfix"></div>
-                                    <div class="progress progress-sm progress-rounded mb-0 mt-3">
-                                        <div class="progress-bar bg-danger progress-bar-info progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="87" aria-valuemin="0" aria-valuemax="100" style="width: 87%;">
-                                            <span class="sr-only">17% Complete</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-3 col-lg-6 col-md-6 col-6">
-                            <div class="card card-white stats-widget">
-                                <div class="card-body">
-                                    <div class="float-left">
-                                        <span class="stats-number">0</span>
-                                        <p class="stats-info">New Users</p>
-                                    </div>
-                                    <div class="float-right">
-                                        <i class="fas fa-user-plus stats-icon text-warning"></i>
-                                    </div>
-                                    <div class="clearfix"></div>
-                                    <div class="progress progress-sm progress-rounded mb-0 mt-3">
-                                        <div class="progress-bar bg-warning progress-bar-info progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100" style="width: 55%;">
-                                            <span class="sr-only">58% Complete</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-3 col-lg-6 col-md-6 col-6">
-                            <div class="card card-white stats-widget">
-                                <div class="card-body">
-                                    <div class="float-left">
-                                        <span class="stats-number">0%</span>
-                                        <p class="stats-info">New Logins</p>
-                                    </div>
-                                    <div class="float-right">
-                                        <i class="fas fa-tasks stats-icon text-success"></i>
-                                    </div>
-                                    <div class="clearfix"></div>
-                                    <div class="progress progress-sm progress-rounded mb-0 mt-3">
-                                        <div class="progress-bar bg-success progress-bar-info progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="58" aria-valuemin="0" aria-valuemax="100" style="width: 58%;">
-                                            <span class="sr-only">58% Complete</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            </div> 
                         </div>
                     </div>
                     <!-- Row -->
-                    <div class="row">
-                        <div class="col-lg-4 col-md-12">
-                            <div class="card card-white">
-                                <div class="card-heading clearfix">
-                                    <h4 class="card-title">Bitcoin Price</h4>
-                                </div>
-                                <div class="card-body">
-                                    <div class="container-fluid">
-                                        <div class="server-load row" style="display: flex;">
-                                            <div class="server-stat col-sm-4">
-                                                <p>$38,140</p>
-                                                <span class="text-success">Today</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div id="chart2">
-                                        <svg></svg>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-12">
-                            <div class="card card-white">
-                                <div class="card-heading clearfix">
-                                    <h4 class="card-title">RECENT SALES</h4>
-                                </div>
-                                <div class="card-body">
-                                    <div class="table-responsive invoice-table">
-                                        <table class="table">
-                                            <tbody>
-                                                <tr>
-                                                    <th scope="row">$16,543</th>
-                                                    
-                                                    <td>Woodforest</td>
-                                                    <td><span class="label label-success">Sold</span></td>
-                                                    <td>kingsafari728@gmail.com</td>
-                                                    
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row">$17,114</th>
-                                                    
-                                                    <td>Huntington</td>
-                                                    <td><span class="label label-success">Sold</span></td>
-                                                    <td>meylingchang5@gmai.com</td>
-                                                    
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row">$12,685</th>
-                                                    
-                                                    <td>Chase Bank</td>
-                                                    <td><span class="label label-danger">Denied</span></td>
-                                                    <td>silveriom266@gmail.com</td>
-                                                    
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row">$15,900</th>
-                                                    
-                                                    <td>Huntington</td>
-                                                    <td><span class="label label-success">Sold</span></td>
-                                                    <td>tonymccage55@gmail.com</td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row">$17,410</th>
-                                                    
-                                                    <td>PNC Bank</td>
-                                                    <td><span class="label label-success">Sold</span></td>
-                                                    <td>philltravis87@gmail.com</td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row">$0</th>
-                                                    
-                                                    <td>Barclays</td>
-                                                    <td><span class="label label-warning">Pending</span></td>
-                                                    <td>sharonrizz21@gmail.com</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-md-12">
-                            <div class="card card-white">
-                                <div class="card-heading clearfix">
-                                    <h4 class="card-title">Browsers</h4>
-                                </div>
-                                <div class="card-body">
-                                    <div class="browser-stats">
-                                        <ul class="list-unstyled">
-                                            <li><i class="fab fa-chrome"></i>Google Chrome
-                                                <div class="text-success float-right">29%<i class="fas fa-level-up-alt"></i></div>
-                                            </li>
-                                            <li><i class="fab fa-firefox"></i>Firefox
-                                                <div class="text-success float-right">28%<i class="fas fa-level-up-alt"></i></div>
-                                            </li>
-                                            <li><i class="fab fa-internet-explorer"></i>Internet Explorer
-                                                <div class="text-success float-right">18%<i class="fas fa-level-up-alt"></i></div>
-                                            </li>
-                                            <li><i class="fab fa-safari"></i>Safari
-                                                <div class="text-danger float-right">11%<i class="fas fa-level-down-alt"></i></div>
-                                            </li>
-                                            <li><i class="fab fa-opera"></i>Opera
-                                                <div class="text-danger float-right">6%<i class="fas fa-level-down-alt"></i></div>
-                                            </li>
-                                            <li><i class="fas fa-mobile-alt"></i>Mobile &amp; tablet
-                                                <div class="text-success float-right">5%<i class="fas fa-level-up-alt"></i></div>
-                                            </li>
-                                            <li><i class="fas fa-hashtag"></i>Others
-                                                <div class="text-success float-right">3%<i class="fas fa-level-up-alt"></i></div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Row -->
-                    <div class="row">
-                    
-                        <div class="col-md-4">
-                            <div class="card card-white">
-                                <div class="card-body">
-                                    <form action="javascript:void(0);">
-                                        <input type="text" class="form-control add-task" placeholder="Add Review...">
-                                    </form>
-                                    <ul class="nav nav-pills todo-nav">
-                                        <li role="presentation" class="nav-item all-task active"><a class="nav-link">All</a></li>
-                                        <li role="presentation" class="nav-item active-task"><a class="nav-link">Possitive</a></li>
-                                        <li role="presentation" class="nav-item completed-task"><a class="nav-link">Critical</a></li>
-                                    </ul>
-                                    <div class="todo-list">
-                                        <div class="todo-item">
-                                            <input type="checkbox">
-                                            <span>Huntington log worked</span>
-                                            <a href="javascript:void(0);" class="float-right remove-todo-item"><i class="icon-close"></i></a>
-                                        </div>
-                                        <div class="todo-item">
-                                            <input type="checkbox">
-                                            <span>That was fast</span>
-                                            <a href="javascript:void(0);" class="float-right remove-todo-item"><i class="icon-close"></i></a>
-                                        </div>
-                                        <div class="todo-item complete">
-                                            <input type="checkbox" checked>
-                                            <span>Had to wait almost 30 mins to get my log 😭</span>
-                                            <a href="javascript:void(0);" class="float-right remove-todo-item"><i class="icon-close"></i></a>
-                                        </div>
-                                        <div class="todo-item complete">
-                                            <input type="checkbox" checked>
-                                            <span>Why is there no high balances above 50k</span>
-                                            <a href="javascript:void(0);" class="float-right remove-todo-item"><i class="icon-close"></i></a>
-                                        </div>
-                                        <div class="todo-item">
-                                            <input type="checkbox">
-                                            <span>Wish I found this site Years ago</span>
-                                            <a href="javascript:void(0);" class="float-right remove-todo-item"><i class="icon-close"></i></a>
-                                        </div>
-                                    </div>
-                                    <input type="checkbox" id="all-complete">
-                                    <span>Mark all as read</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="card card-white">
-                                <div class="card-body">
-                                    <div class="card-heading clearfix">
-                                        <h4 class="card-title">BANK LOGS DISTRIBUTION</h4>
-                                    </div>
-                                    <canvas id="chart3"></canvas>
-                                </div>
-                            </div>
-                        </div>
-                        
-                    </div>
-
-                
                 </div>
                 <!-- end page main wrapper -->
                 <div class="page-footer">
@@ -621,9 +779,8 @@
                 </div>
             </div>
             <!-- end page inner -->
-
+            
             <!-- start page right sidebar -->
-
             <!-- start main right sidebar -->
             <div class="page-right-sidebar" id="main-right-sidebar">
                 <div class="page-right-sidebar-inner">
@@ -650,7 +807,7 @@
                                             <img src="../media/img/avatars/user-dropdown.jpg" alt="" />
                                         </div>
                                         <div class="chat-info">
-                                            <span class="chat-author">Bank Logs</span>
+                                            <span class="chat-author">@banklogsusa</span>
                                             <span class="chat-text">Start Chat</span>
                                             <span class="chat-time">08:50</span>
                                         </div>
@@ -664,50 +821,49 @@
             </div>
             <!-- end main right sidebar -->
 
-            <!-- start chat right sidebar -->
-            <div class="page-right-sidebar" id="chat-right-sidebar">
-                <div class="page-right-sidebar-inner">
-                    <div class="right-sidebar-top">
-                        <div class="chat-top-info">
-                            <span class="chat-name">Bank Logs</span>
-                            <span class="chat-state">2 mins ago</span>
+                 <!-- start chat right sidebar -->
+                 <div class="page-right-sidebar" id="chat-right-sidebar">
+                    <div class="page-right-sidebar-inner">
+                        <div class="right-sidebar-top">
+                            <div class="chat-top-info">
+                                <span class="chat-name">Bank Logs</span>
+                                <span class="chat-state">2 mins ago</span>
+                            </div>
+                            <a href="javascript:void(0)" class="right-sidebar-toggle chat-sidebar-close float-right" data-sidebar-id="chat-right-sidebar"><i class="icon-keyboard_arrow_right"></i></a>
                         </div>
-                        <a href="javascript:void(0)" class="right-sidebar-toggle chat-sidebar-close float-right" data-sidebar-id="chat-right-sidebar"><i class="icon-keyboard_arrow_right"></i></a>
-                    </div>
-                    <div class="right-sidebar-content">
-                        <div class="right-sidebar-chat slimscroll">
-                            <div class="chat-bubbles">
-                                <div class="chat-start-date">21/10/2020 5:58PM</div>
-                                <div class="chat-bubble them">
-                                    <div class="chat-bubble-img-container">
-                                        <img src="../media/img/avatars/user-dropdown.jpg" alt="" />
+                        <div class="right-sidebar-content">
+                            <div class="right-sidebar-chat slimscroll">
+                                <div class="chat-bubbles">
+                                    <div class="chat-start-date">21/10/2020 5:58PM</div>
+                                    <div class="chat-bubble them">
+                                        <div class="chat-bubble-img-container">
+                                            <img src="img/avatars/user-dropdown.jpg" alt="" />
+                                        </div>
+                                        <div class="chat-bubble-text-container">
+                                            <span class="chat-bubble-text">Welcome to Bank Logs</span>
+                                        </div>
                                     </div>
-                                    <div class="chat-bubble-text-container">
-                                        <span class="chat-bubble-text">Welcome to Bank Logs</span>
-                                    </div>
-                                </div>
-                            
-                                <div class="chat-bubble them">
-                                    <div class="chat-bubble-img-container">
-                                        <img src="../media/img/avatars/user-dropdown.jpg" alt="" />
-                                    </div>
-                                    <div class="chat-bubble-text-container">
-                                        <span class="chat-bubble-text">Start Chat</span>
+                                
+                                    <div class="chat-bubble them">
+                                        <div class="chat-bubble-img-container">
+                                            <img src="img/avatars/user-dropdown.jpg" alt="" />
+                                        </div>
+                                        <div class="chat-bubble-text-container">
+                                            <span class="chat-bubble-text">Start Chat</span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
+                            <div class="chat-write">
+                                <form class="form-horizontal" action="javascript:void(0);">
+                                    <input type="text" class="form-control" placeholder="Say something">
+                                </form>
+                            </div>
+                        
                         </div>
-                        <div class="chat-write">
-                            <form class="form-horizontal" action="javascript:void(0);">
-                                <input type="text" class="form-control" placeholder="Say something">
-                            </form>
-                        </div>
-                    
                     </div>
                 </div>
-            </div>
-            <!-- end chat right sidebar -->
-
+                <!-- end chat right sidebar -->
             <!-- end page right sidebar -->
             
         </div>
@@ -715,12 +871,12 @@
     </div>
     <!-- end page container -->
 
+
  <!--    <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-auth.js"></script>
     
     <script>
-  
-   var firebaseConfig = {
+  var firebaseConfig = {
     apiKey: "AIzaSyDGwhFbFiCm9IDTNQwf69atH_MmUu9eMUs",
     authDomain: "bankloginusa.firebaseapp.com",
     projectId: "bankloginusa",
@@ -730,8 +886,8 @@
     measurementId: "G-SKYMPP3KX6"
   };
   // Initialize Firebase
-  firebase.initializeApp(firebaseConfig); 
-</script> -->
+  firebase.initializeApp(firebaseConfig);
+    </script> -->
     <script src="../media/js/profile.js"></script>
 
     <!-- all js include start -->
@@ -751,68 +907,18 @@
     <!-- switchery -->
     <script src="../media/plugins/switchery/switchery.min.js"></script>
 
-    <!-- chartjs -->
-    <script src='../media/plugins/chartjs/chart.min.js'></script>
+    <!-- datatables -->
+    <script src="../media/plugins/datatables/js/jquery.datatables.min.js"></script>
 
-    <!-- d3.min -->
-    <script src="../media/plugins/d3/d3.min.js"></script>
+    <!-- datepicker -->
+    <script src="../media/plugins/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
 
-    <!-- nv.d3.min -->
-    <script src="../media/plugins/nvd3/nv.d3.min.js"></script>
-
-    <!-- float chart -->
-    <script src="../media/plugins/flot/jquery.flot.min.js"></script>
-
-    <!-- float time -->
-    <script src="../media/plugins/flot/jquery.flot.time.min.js"></script>
-
-    <!-- float symbol -->
-    <script src="../media/plugins/flot/jquery.flot.symbol.min.js"></script>
-
-    <!-- float resize -->
-    <script src="../media/plugins/flot/jquery.flot.resize.min.js"></script>
-
-    <!-- float tooltip -->
-    <script src="../media/plugins/flot/jquery.flot.tooltip.min.js"></script>
-
-    <!-- float pie -->
-    <script src="../media/plugins/flot/jquery.flot.pie.min.js"></script>
-
-    <!-- float pie -->
-    <script src="../media/js/pages/dashboard.js"></script>
-    
-    <!-- ui modal -->
-    <script src="../media/js/pages/ui-modals.js"></script>
+    <!-- table-data -->
+    <script src="j../media/s/pages/table-data.js"></script>
 
     <!-- custom scripts -->
     <script src="../media/js/main.js"></script>
-
-    <!-- float pie -->
-    <script src="../media/js/pages/chart.js"></script>
-
-    <!-- full calendar event -->
-    <script src="../media/js/pages/calendar-event.js"></script>
-
-    <!-- full calendar core -->
-    <script src='../media/plugins/full-calendar/core/main.min.js'></script>
-
-    <!-- full calendar interaction -->
-    <script src='../media/plugins/full-calendar/interaction/main.min.js'></script>
-
-    <!-- full calendar daygrid -->
-    <script src='../media/plugins/full-calendar/daygrid/main.min.js'></script>
-
-    <!-- full calendar timegrid -->
-    <script src='../media/plugins/full-calendar/timegrid/main.min.js'></script>
-
-    <!-- full calendar list -->
-    <script src='../media/plugins/full-calendar/list/main.min.js'></script>
-
-
-    <script src="../media/js/pages/todo.js"></script>
-
-<script src="https://apps.elfsight.com/p/platform.js" defer></script>
-<div class="elfsight-app-35171597-66c8-417d-a020-81433c95e27f"></div>  
+     
 </body>
 
 

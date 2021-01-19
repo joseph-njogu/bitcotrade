@@ -10,39 +10,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="keywords" content="bank logs" />
-    <meta name="description" content="Huntington Bank" />
+    <meta name="description" content="Suntrust Bank" />
 
     <!-- title  -->
-    <title>Huntington Bank</title>
+    <title>Suntrust Bank</title>
 
     <!-- favicon -->
-<!--     <link rel="shortcut icon" href="img/logos/favicon.png">
+    <link rel="shortcut icon" href="img/logos/favicon.png">
     <link rel="apple-touch-icon" href="img/logos/apple-touch-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="72x72" href="img/logos/apple-touch-icon-72x72.png">
     <link rel="apple-touch-icon" sizes="114x114" href="img/logos/apple-touch-icon-114x114.png">
- -->
+
     <!-- common plugins -->
-    <link rel="stylesheet" href="../media/plugins/bootstrap/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="../media/plugins/font-awesome/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="../media/plugins/icomoon/style.css" />
-    <link rel="stylesheet" href="../media/plugins/uniform/css/default.css" />
-    <link rel="stylesheet" href="../media/plugins/switchery/switchery.min.css" />
+    <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="plugins/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="plugins/icomoon/style.css" />
+    <link rel="stylesheet" href="plugins/uniform/css/default.css" />
+    <link rel="stylesheet" href="plugins/switchery/switchery.min.css" />
 
     <!-- datatables plugin -->
-    <link rel="stylesheet" href="../media/plugins/datatables/css/jquery.datatables.min.css" />
-    <link rel="stylesheet" href="../media/plugins/datatables/css/jquery.datatables_themeroller.css" />
+    <link rel="stylesheet" href="plugins/datatables/css/jquery.datatables.min.css" />
+    <link rel="stylesheet" href="plugins/datatables/css/jquery.datatables_themeroller.css" />
 
     <!-- bootstrap-datepicker plugin -->
-    <link rel="stylesheet" href="../media/plugins/bootstrap-datepicker/css/datepicker.css" />
+    <link rel="stylesheet" href="plugins/bootstrap-datepicker/css/datepicker.css" />
 
     <!-- custom css -->
-    <link rel="stylesheet" href="../media/css/styles.css" />
-    <style>
-        .kaimage{
-            height: 20px;
-            border-radius: 50%;
-        }
-    </style>
+    <link rel="stylesheet" href="css/styles.css" />
 
 </head>
 
@@ -58,13 +52,13 @@
 
     <!-- start page container -->
     <div class="page-container">
-        <!-- start page sidebar -->
-        <div class="page-sidebar">
-            <a class="logo-box" href="{% url 'huntington' %}">
-                <span>HUNTINGTON</span>
-                <i class="icon-radio_button_unchecked" id="fixed-sidebar-toggle-button"></i>
-                <i class="icon-close" id="sidebar-toggle-button-close"></i>
-            </a>
+              <!-- start page sidebar -->
+              <div class="page-sidebar">
+                <a class="logo-box" href="{% url 'huntington' %}">
+                    <span>SUNTRUST</span>
+                    <i class="icon-radio_button_unchecked" id="fixed-sidebar-toggle-button"></i>
+                    <i class="icon-close" id="sidebar-toggle-button-close"></i>
+                </a>
 <div class="page-sidebar-inner">
 <div class="page-sidebar-menu">
 <ul class="accordion-menu">
@@ -76,7 +70,7 @@
 <li>
     <a href="{% url 'huntington' %}">
         <i class="menu-icon">
-            <img src="../media/huntington.jpg" class="kaimage">
+            <img src="images/huntington.jpg" class="kaimage">
         </i>
         <span>Huntington Bank</span>
     </a>
@@ -84,7 +78,7 @@
 <li>
     <a href="{% url 'woodforest' %}">
         <i class="menu-icon">
-            <img src="../media/woodforest.jpg" class="kaimage">
+            <img src="images/woodforest.jpg" class="kaimage">
         </i>
         <span>Woodforest Bank</span>
     </a>
@@ -92,31 +86,31 @@
 <li>
     <a href="{% url 'barclays' %}">
         <i class="menu-icon">
-            <img src="../media/barclays.jpg" class="kaimage">
+            <img src="images/barclays.jpg" class="kaimage">
         </i>
         <span>Barclays Bank</span>
     </a>
 </li>
 <li>
-    <a href="{% url 'citi' %}">
-        <i class="menu-icon">
-            <img src="../media/citi.jpg" class="kaimage">
-        </i>
-        <span>Citi Bank</span>
-    </a>
-</li>
-<li>
     <a href="{% url 'bbt' %}">
         <i class="menu-icon">
-            <img src="../media/bbt.jpg" class="kaimage">
+            <img src="images/bbt.jpg" class="kaimage">
         </i>
         <span>BB&T Bank</span>
     </a>
 </li>
 <li>
-    <a href="{% url 'bbva' %}">
+    <a href="{% url 'citi' %}">
         <i class="menu-icon">
-            <img src="../media/bbva.jpg" class="kaimage">
+            <img src="images/citi.jpg" class="kaimage">
+        </i>
+        <span>Citi Bank</span>
+    </a>
+</li>
+<li>
+    <a href="{% url 'bbva' %}l">
+        <i class="menu-icon">
+            <img src="images/bbva.jpg" class="kaimage">
         </i>
         <span>BBVA Bank</span>
     </a>
@@ -124,7 +118,7 @@
 <li>
     <a href="{% url 'chase' %}">
         <i class="menu-icon">
-            <img src="../media/chase.jpg" class="kaimage">
+            <img src="images/chase.jpg" class="kaimage">
         </i>
         <span>Chase Bank</span>
     </a>
@@ -132,7 +126,7 @@
 <li>
     <a href="{% url 'nfcu' %}">
         <i class="menu-icon">
-            <img src="../media/nfcu.jpg" class="kaimage">
+            <img src="images/nfcu.jpg" class="kaimage">
         </i>
         <span>NFCU Bank</span>
     </a>
@@ -140,7 +134,7 @@
 <li>
     <a href="{% url 'rbc' %}">
         <i class="menu-icon">
-            <img src="../media/rbc.jpg" class="kaimage">
+            <img src="images/rbc.jpg" class="kaimage">
         </i>
         <span>RBC Bank</span>
     </a>
@@ -148,26 +142,26 @@
 <li>
     <a href="{% url 'pnc' %}">
         <i class="menu-icon">
-            <img src="../media/pnc.jpg" class="kaimage">
+            <img src="images/pnc.jpg" class="kaimage">
         </i>
         <span>PNC Bank</span>
     </a>
 </li>
 
 
- <li>
+ 
+<li>
     <a href="suntrust.html">
         <i class="menu-icon">
-            <img src="../media/suntrust.jpg" class="kaimage">
+            <img src="images/suntrust.jpg" class="kaimage">
         </i>
         <span>SunTrust Bank</span>
     </a>
 </li>
-
 <li>
     <a href="{% url 'scotia' %}">
         <i class="menu-icon">
-            <img src="../media/scotia.jpg" class="kaimage">
+            <img src="images/scotia.jpg" class="kaimage">
         </i>
         <span>Scotia Bank</span>
     </a>
@@ -183,8 +177,9 @@
 </div>
 </div>
 </div>
+<!-- end page sidebar -->
 
-        <!-- start page content -->
+               <!-- start page content -->
         <div class="page-content">
             <!-- start page header -->
             <div class="page-header">
@@ -203,7 +198,7 @@
 <ul class="nav navbar-nav navbar-right">
         <li style="float: right;" class="dropdown user-dropdown">
             <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                <img src="../media/07.gif" id="photoHolder" alt="" class="rounded-circle keimage">
+                <img src="images/07.gif" id="photoHolder" alt="" class="rounded-circle keimage">
             </a>
                <ul class="dropdown-menu dropdown-lg dropdown-content">
 <li class="drop-title"><a href="lockscreen.html">LogOut</a></li>
@@ -213,7 +208,7 @@
                                                 <li>
                                                     <a href="#">
                                                         <span class="notification-badge">
-                                                            <img src="../media/huntington.jpg" style="border-radius: 50%;">
+                                                            <img src="images/huntington.jpg" style="border-radius: 50%;">
                                                         </span>
                                                         <span class="notification-info">
                                                             Added 3 New <b>Huntington Logs</b>.
@@ -226,7 +221,7 @@
                                                 <li>
                                                     <a href="#">
                                                         <span class="notification-badge">
-                                                            <img src="../media/woodforest.jpg" style="border-radius: 50%;" >
+                                                            <img src="images/woodforest.jpg" style="border-radius: 50%;" >
                                                         </span>
                                                         <span class="notification-info"><b>Sold</b> Woodforest Log Balance $16,700
                                                             <small class="notification-date">06:07</small>
@@ -237,7 +232,7 @@
                                                 <li>
                                                     <a href="#">
                                                         <span class="notification-badge">
-                                                            <img src="../media/barclays.jpg" style="border-radius: 50%;">
+                                                            <img src="images/barclays.jpg" style="border-radius: 50%;">
                                                         </span>
                                                         <span class="notification-info"><b>Sold</b> Barclays Log Balance $18,150
                                                             <small class="notification-date">Yesterday</small>
@@ -248,7 +243,7 @@
                                                 <li>
                                                     <a href="#">
                                                         <span class="notification-badge">
-                                                            <img src="../media/chase.jpg" style="border-radius: 50%;">
+                                                            <img src="images/chase.jpg" style="border-radius: 50%;">
                                                         </span>
                                                         <span class="notification-info"><b>Sold</b> Chase Log Balance $11,243
                                                             <small class="notification-date">Yesterday</small>
@@ -259,7 +254,7 @@
                                                 <li>
                                                     <a href="#">
                                                         <span class="notification-badge">
-                                                            <img src="../media/bbva.jpg" style="border-radius: 50%;">
+                                                            <img src="images/bbva.jpg" style="border-radius: 50%;">
                                                         </span>
                                                         <span class="notification-info"><b>Sold</b> BBVA Log Balance $16,980
                                                             <small class="notification-date">Yesterday</small>
@@ -273,9 +268,9 @@
         </li>    
 </ul>
     </div>        
-</div>
+</div> 
 
-                <!-- Collct the nav links, forms, and other content for toggling -->
+<!-- Collct the nav links, forms, and other content for toggling -->
 
                         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                             <ul class="nav navbar-nav">
@@ -295,7 +290,7 @@
                                                 <li>
                                                     <a href="#">
                                                         <span class="notification-badge">
-                                                            <img src="../media/huntington.jpg" style="border-radius: 50%;">
+                                                            <img src="images/huntington.jpg" style="border-radius: 50%;">
                                                         </span>
                                                         <span class="notification-info">
                                                             Added 3 New <b>Huntington Logs</b>.
@@ -308,7 +303,7 @@
                                                 <li>
                                                     <a href="#">
                                                         <span class="notification-badge">
-                                                            <img src="../media/woodforest.jpg" style="border-radius: 50%;" >
+                                                            <img src="images/woodforest.jpg" style="border-radius: 50%;" >
                                                         </span>
                                                         <span class="notification-info"><b>Sold</b> Woodforest Log Balance $6,700
                                                             <small class="notification-date">06:07</small>
@@ -319,7 +314,7 @@
                                                 <li>
                                                     <a href="#">
                                                         <span class="notification-badge">
-                                                            <img src="../media/barclays.jpg" style="border-radius: 50%;">
+                                                            <img src="images/barclays.jpg" style="border-radius: 50%;">
                                                         </span>
                                                         <span class="notification-info"><b>Sold</b> Barclays Log Balance $8,150
                                                             <small class="notification-date">Yesterday</small>
@@ -330,7 +325,7 @@
                                                 <li>
                                                     <a href="#">
                                                         <span class="notification-badge">
-                                                            <img src="../media/chase.jpg" style="border-radius: 50%;">
+                                                            <img src="images/chase.jpg" style="border-radius: 50%;">
                                                         </span>
                                                         <span class="notification-info"><b>Sold</b> Chase Log Balance $11,243
                                                             <small class="notification-date">Yesterday</small>
@@ -341,7 +336,7 @@
                                                 <li>
                                                     <a href="#">
                                                         <span class="notification-badge">
-                                                            <img src="../media//bbva.jpg" style="border-radius: 50%;">
+                                                            <img src="images/bbva.jpg" style="border-radius: 50%;">
                                                         </span>
                                                         <span class="notification-info"><b>Sold</b> BBVA Log Balance $6,980
                                                             <small class="notification-date">Yesterday</small>
@@ -355,7 +350,7 @@
                                 </li>
                                 <li class="dropdown user-dropdown">
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                                        <img src="../media/img/avatars/user-dropdown.jpg" alt="" class="rounded-circle">
+                                        <img src="img/avatars/user-dropdown.jpg" alt="" class="rounded-circle">
                                     </a>
                                         <ul class="dropdown-menu">
                                             <li><a href="lockscreen.html">Log Out</a></li>
@@ -378,340 +373,315 @@
                             <div class="cark card-white">
                                 <div class="card-body">
                                     <div class="table-responsive table-bordered">
+
 <table id="example" class="display table" style="width:100%">
 <thead>
-    <tr>
-        <th>Balance</th>  
-        <th>Info</th>
-        <th>Buy</th>
-    </tr>
+<tr>
+    <th>Balance</th> 
+    <th>Info</th>
+    <th>BUY</th>
+</tr>
 </thead>
-<tbody class="table-success">
-    <tr>
-        <td>$13,428</td>
-        <td>CHECKING ACCOUNT Huntington.com [Login:Password] Name+Address [Email access]</td>
-        <td>
-        <form action="{% url 'invoice' %}" method="GET">
-        <input type="hidden" name="prod_id" value="268">
-        <input type="hidden" name="prod_bank" value="Huntington Bank [CHECKING ACCOUNT]">
-        <input type="hidden" name="prod_balance" value="Balance: $13,428">
-        <input type="hidden" name="prod_type" value="Huntington.com [Login:Password]+Name+Address+[Email access]">
-        <button type="submit" class="btn btn-success btn-addon">
-            <i class="fas fa-cart-plus" style="margin-right: 5px;"></i>
-            $268
-        </button>
-        </form>
-        </td>
-    </tr> 
-    <tr>
-        <td>$15,640</td>
-        <td>CHECKING ACCOUNT Huntington.com [Login:Password] Name+Address [Email access]</td>
-        <td>
-        <form action="{% url 'invoice' %}" method="GET">
-        <input type="hidden" name="prod_id" value="312">
-        <input type="hidden" name="prod_bank" value="Huntington Bank [CHECKING ACCOUNT]">
-        <input type="hidden" name="prod_balance" value="Balance: $15,640">
-        <input type="hidden" name="prod_type" value="Huntington.com [Login:Password]+Name+Address+[Email access]">
-        <button type="submit" class="btn btn-success btn-addon">
-            <i class="fas fa-cart-plus" style="margin-right: 5px;"></i>
-            $312
-        </button>
-        </form>
-        </td>
-    </tr> 
-    <tr>
-        <td>$13,961</td>
-        <td>CHECKING ACCOUNT Huntington.com [Login:Password] Name+Address [Email access]</td>
-        <td>
-            <form action="{% url 'invoice' %}" method="GET">
-        <input type="hidden" name="prod_id" value="278">
-        <input type="hidden" name="prod_bank" value="Huntington Bank [CHECKING ACCOUNT]">
-        <input type="hidden" name="prod_balance" value="Balance: $13,961">
-        <input type="hidden" name="prod_type" value="Huntington.com [Login:Password]+Name+Address+[Email access]">
-        <button type="submit" class="btn btn-success btn-addon">
-            <i class="fas fa-cart-plus" style="margin-right: 5px;"></i>
-            $278
-        </button>
-        </form>
-        </td>
-    </tr> 
-    <tr>
-        <td>$19,715</td>
-        <td>CHECKING ACCOUNT Huntington.com [Login:Password] Name+Address [Email access]</td>
-        <td>
-            <form action="{% url 'invoice' %}" method="GET">
-        <input type="hidden" name="prod_id" value="394">
-        <input type="hidden" name="prod_bank" value="Huntington Bank [CHECKING ACCOUNT]">
-        <input type="hidden" name="prod_balance" value="Balance: $19,715">
-        <input type="hidden" name="prod_type" value="Huntington.com [Login:Password]+Name+Address+[Email access]">
-        <button type="submit" class="btn btn-success btn-addon">
-            <i class="fas fa-cart-plus" style="margin-right: 5px;"></i>
-            $394
-        </button>
-        </form>
-        </td>
-    </tr> 
-    <tr>
-        <td>$17,853</td>
-        <td>CHECKING ACCOUNT Huntington.com [Login:Password] Name+Address [Email access]</td>
-        <td>
-            <form action="{% url 'invoice' %}" method="GET">
-        <input type="hidden" name="prod_id" value="346">
-        <input type="hidden" name="prod_bank" value="Huntington Bank [CHECKING ACCOUNT]">
-        <input type="hidden" name="prod_balance" value="Balance: $17,853">
-        <input type="hidden" name="prod_type" value="Huntington.com [Login:Password]+Name+Address+[Email access]">
-        <button type="submit" class="btn btn-success btn-addon">
-            <i class="fas fa-cart-plus" style="margin-right: 5px;"></i>
-            $346
-        </button>
-        </form>
-        </td>
-    </tr> 
-    <tr>
-        <td>$19,178</td>
-        <td>CHECKING ACCOUNT Huntington.com [Login:Password] Name+Address [Email access]</td>
-        <td>
-            <form action="{% url 'invoice' %}" method="GET">
-        <input type="hidden" name="prod_id" value="383">
-        <input type="hidden" name="prod_bank" value="Huntington Bank [CHECKING ACCOUNT]">
-        <input type="hidden" name="prod_balance" value="Balance: $19,178">
-        <input type="hidden" name="prod_type" value="Huntington.com [Login:Password]+Name+Address+[Email access]">
-        <button type="submit" class="btn btn-success btn-addon">
-            <i class="fas fa-cart-plus" style="margin-right: 5px;"></i>
-            $383
-        </button>
-        </form>
-        </td>
-    </tr> 
-    <tr>
-        <td>$20,712</td>
-        <td>CHECKING ACCOUNT Huntington.com [Login:Password] Name+Address [Email access]</td>
-        <td>
-        <form action="{% url 'invoice' %}" method="GET">
-        <input type="hidden" name="prod_id" value="414">
-        <input type="hidden" name="prod_bank" value="Huntington Bank [CHECKING ACCOUNT]">
-        <input type="hidden" name="prod_balance" value="Balance: $20,712">
-        <input type="hidden" name="prod_type" value="Huntington.com [Login:Password]+Name+Address+[Email access]">
-        <button type="submit" class="btn btn-success btn-addon">
-            <i class="fas fa-cart-plus" style="margin-right: 5px;"></i>
-            $414
-        </button>
-        </form>
-        </td>
-    </tr> 
-    <tr>
-        <td>$18,271</td>
-        <td>CHECKING ACCOUNT Huntington.com [Login:Password] Name+Address [Email access]</td>
-        <td>
-            <form action="{% url 'invoice' %}" method="GET">
-        <input type="hidden" name="prod_id" value="365">
-        <input type="hidden" name="prod_bank" value="Huntington Bank [CHECKING ACCOUNT]">
-        <input type="hidden" name="prod_balance" value="Balance: $18,271">
-        <input type="hidden" name="prod_type" value="Huntington.com [Login:Password]+Name+Address+[Email access]">
-        <button type="submit" class="btn btn-success btn-addon">
-            <i class="fas fa-cart-plus" style="margin-right: 5px;"></i>
-            $365
-        </button>
-        </form>
-        </td>
-    </tr> 
-    <tr>
-        <td>$25,397</td>
-        <td>CHECKING ACCOUNT Huntington.com [Login:Password] Name+Address [Email access]</td>
-        <td>
-            <form action="{% url 'invoice' %}" method="GET">
-        <input type="hidden" name="prod_id" value="507">
-        <input type="hidden" name="prod_bank" value="Huntington Bank [CHECKING ACCOUNT]">
-        <input type="hidden" name="prod_balance" value="Balance: $25,397">
-        <input type="hidden" name="prod_type" value="Huntington.com [Login:Password]+Name+Address+[Email access]">
-        <button type="submit" class="btn btn-success btn-addon">
-            <i class="fas fa-cart-plus" style="margin-right: 5px;"></i>
-            $507
-        </button>
-        </form>
-        </td>
-    </tr> 
-    <tr>
-        <td>$21,244</td>
-        <td>CHECKING ACCOUNT Huntington.com [Login:Password] Name+Address [Email access]</td>
-        <td>
-            <form action="{% url 'invoice' %}" method="GET">
-        <input type="hidden" name="prod_id" value="425">
-        <input type="hidden" name="prod_bank" value="Huntington Bank [CHECKING ACCOUNT]">
-        <input type="hidden" name="prod_balance" value="Balance: $21,244">
-        <input type="hidden" name="prod_type" value="Huntington.com [Login:Password]+Name+Address+[Email access]">
-        <button type="submit" class="btn btn-success btn-addon">
-            <i class="fas fa-cart-plus" style="margin-right: 5px;"></i>
-            $425
-        </button>
-        </form>
-        </td>
-    </tr> 
-    <tr>
-        <td>$29,355</td>
-        <td>CHECKING ACCOUNT Huntington.com [Login:Password] Name+Address [Email access]</td>
-        <td>
-            <form action="{% url 'invoice' %}" method="GET">
-        <input type="hidden" name="prod_id" value="586">
-        <input type="hidden" name="prod_bank" value="Huntington Bank [CHECKING ACCOUNT]">
-        <input type="hidden" name="prod_balance" value="Balance: $29,355">
-        <input type="hidden" name="prod_type" value="Huntington.com [Login:Password]+Name+Address+[Email access]">
-        <button type="submit" class="btn btn-success btn-addon">
-            <i class="fas fa-cart-plus" style="margin-right: 5px;"></i>
-            $586
-        </button>
-        </form>
-        </td>
-    </tr> 
-    <tr>
-        <td>$24,517</td>
-        <td>CHECKING ACCOUNT Huntington.com [Login:Password] Name+Address [Email access]</td>
-        <td>
-            <form action="{% url 'invoice' %}" method="GET">
-        <input type="hidden" name="prod_id" value="490">
-        <input type="hidden" name="prod_bank" value="Huntington Bank [CHECKING ACCOUNT]">
-        <input type="hidden" name="prod_balance" value="Balance: $24,517">
-        <input type="hidden" name="prod_type" value="Huntington.com [Login:Password]+Name+Address+[Email access]">
-        <button type="submit" class="btn btn-success btn-addon">
-            <i class="fas fa-cart-plus" style="margin-right: 5px;"></i>
-            $490
-        </button>
-        </form>
-        </td>
-    </tr> 
-    <tr>
-        <td>$28,761</td>
-        <td>CHECKING ACCOUNT Huntington.com [Login:Password] Name+Address [Email access]</td>
-        <td>
-            <form action="{% url 'invoice' %}" method="GET">
-        <input type="hidden" name="prod_id" value="575">
-        <input type="hidden" name="prod_bank" value="Huntington Bank [CHECKING ACCOUNT]">
-        <input type="hidden" name="prod_balance" value="Balance: $28,761">
-        <input type="hidden" name="prod_type" value="Huntington.com [Login:Password]+Name+Address+[Email access]">
-        <button type="submit" class="btn btn-success btn-addon">
-            <i class="fas fa-cart-plus" style="margin-right: 5px;"></i>
-            $575
-        </button>
-        </form>
-        </td>
-    </tr> 
-    <tr>
-        <td>$30,390</td>
-        <td>CHECKING ACCOUNT Huntington.com [Login:Password] Name+Address [Email access]</td>
-        <td>
-            <form action="{% url 'invoice' %}" method="GET">
-        <input type="hidden" name="prod_id" value="606">
-        <input type="hidden" name="prod_bank" value="Huntington Bank [CHECKING ACCOUNT]">
-        <input type="hidden" name="prod_balance" value="Balance: $30,390">
-        <input type="hidden" name="prod_type" value="Huntington.com [Login:Password]+Name+Address+[Email access]">
-        <button type="submit" class="btn btn-success btn-addon">
-            <i class="fas fa-cart-plus" style="margin-right: 5px;"></i>
-            $606
-        </button>
-        </form>
-        </td>
-    </tr>  
-    <tr>
-        <td>$31,467</td>
-        <td>CHECKING ACCOUNT Huntington.com [Login:Password] Name+Address [Email access]</td>
-        <td>
-            <form action="{% url 'invoice' %}" method="GET">
-        <input type="hidden" name="prod_id" value="629">
-        <input type="hidden" name="prod_bank" value="Huntington Bank [CHECKING ACCOUNT]">
-        <input type="hidden" name="prod_balance" value="Balance: $31,467">
-        <input type="hidden" name="prod_type" value="Huntington.com [Login:Password]+Name+Address+[Email access]">
-        <button type="submit" class="btn btn-success btn-addon">
-            <i class="fas fa-cart-plus" style="margin-right: 5px;"></i>
-            $629
-        </button>
-        </form>
-        </td>
-    </tr> 
-    <tr>
-        <td>$29,280</td>
-        <td>CHECKING ACCOUNT Huntington.com [Login:Password] Name+Address [Email Access]</td>
-        <td>
-            <form action="{% url 'invoice' %}" method="GET">
-        <input type="hidden" name="prod_id" value="584">
-        <input type="hidden" name="prod_bank" value="Huntington Bank [CHECKING ACCOUNT]">
-        <input type="hidden" name="prod_balance" value="Balance: $29,280">
-        <input type="hidden" name="prod_type" value="Huntington.com [Login:Password]+Name+Address+[Email access]">
-        <button type="submit" class="btn btn-success btn-addon">
-            <i class="fas fa-cart-plus" style="margin-right: 5px;"></i>
-            $584
-        </button>
-        </form>
-        </td>
-    </tr> 
-    <tr>
-        <td>$24,916</td>
-        <td>CHECKING ACCOUNT Huntington.com [Login:Password] Name+Address [email access]</td>
-        <td>
-            <form action="{% url 'invoice' %}" method="GET">
-        <input type="hidden" name="prod_id" value="498">
-        <input type="hidden" name="prod_bank" value="Huntington Bank [CHECKING ACCOUNT]">
-        <input type="hidden" name="prod_balance" value="Balance: $24,916">
-        <input type="hidden" name="prod_type" value="Huntington.com [Login:Password]+Name+Address+[Email access]">
-        <button type="submit" class="btn btn-success btn-addon">
-            <i class="fas fa-cart-plus" style="margin-right: 5px;"></i>
-            $498
-        </button>
-        </form>
-        </td>
-    </tr> 
-    <tr>
-        <td>$29,733</td>
-        <td>CHECKING ACCOUNT Huntington.com [Login:Password] Name+Address [email access]</td>
-        <td>
-            <form action="{% url 'invoice' %}" method="GET">
-        <input type="hidden" name="prod_id" value="594">
-        <input type="hidden" name="prod_bank" value="Huntington Bank [CHECKING ACCOUNT]">
-        <input type="hidden" name="prod_balance" value="Balance: $29,733">
-        <input type="hidden" name="prod_type" value="Huntington.com [Login:Password]+Name+Address+[Email access]">
-        <button type="submit" class="btn btn-success btn-addon">
-            <i class="fas fa-cart-plus" style="margin-right: 5px;"></i>
-            $594
-        </button>
-        </form>
-        </td>
-    </tr> 
-    <tr>
-        <td>$28,560</td>
-        <td>CHECKING ACCOUNT Huntington.com [Login:Password] Name+Address [email access]</td>
-        <td>
-            <form action="{% url 'invoice' %}" method="GET">
-        <input type="hidden" name="prod_id" value="571">
-        <input type="hidden" name="prod_bank" value="Huntington Bank [CHECKING ACCOUNT]">
-        <input type="hidden" name="prod_balance" value="Balance: $28,560">
-        <input type="hidden" name="prod_type" value="Huntington.com [Login:Password]+Name+Address+[Email access]">
-        <button type="submit" class="btn btn-success btn-addon">
-            <i class="fas fa-cart-plus" style="margin-right: 5px;"></i>
-            $571
-        </button>
-        </form>
-        </td>
-    </tr> 
- 
+<tbody>
+<tr>
+    <td>$20,058</td>
+    <td>BUSINESS CHECKING Suntrust.com [Login:Password]+ AN/RN+ [Email attached ]</td>
+    <td>
+    <form action="invoice.html" method="GET">
+    <input type="hidden" name="prod_id" value="400">
+    <input type="hidden" name="prod_bank" value="Suntrust Bank [BUSINESS CHECKING]">
+    <input type="hidden" name="prod_balance" value="Balance: $20,058">
+    <input type="hidden" name="prod_type" value="Suntrust.com [Login:Password]+AN/RN+[Email attached ]">
+    <button type="submit" class="btn btn-success btn-addon">
+        <i class="fas fa-cart-plus" style="margin-right: 5px;"></i>
+        $400
+    </button>
+    </form>
+    </td>
+</tr> 
+
+<tr>
+    <td>$20,721</td>
+    <td>CHECKING ACCOUNT Suntrust.com [Login:Password]+ AN/RN+ [Email attached ]</td>
+    <td>
+    <form action="invoice.html" method="GET">
+    <input type="hidden" name="prod_id" value="414">
+    <input type="hidden" name="prod_bank" value="Suntrust Bank [CHECKING ACCOUNT]">
+    <input type="hidden" name="prod_balance" value="Balance: $20,721">
+    <input type="hidden" name="prod_type" value="Suntrust.com [Login:Password]+AN/RN+[Email attached ]">
+    <button type="submit" class="btn btn-success btn-addon">
+        <i class="fas fa-cart-plus" style="margin-right: 5px;"></i>
+        $414
+    </button>
+    </form>
+    </td>
+</tr> 
+
+<tr>
+    <td>$14,538</td>
+    <td>JOINT ACCOUNT Suntrust.com [Login:Password]+ AN/RN+ [Email attached ]</td>
+    <td>
+    <form action="invoice.html" method="GET">
+    <input type="hidden" name="prod_id" value="290">
+    <input type="hidden" name="prod_bank" value="Suntrust Bank [JOINT ACCOUNT]">
+    <input type="hidden" name="prod_balance" value="Balance: $14,538">
+    <input type="hidden" name="prod_type" value="Suntrust.com [Login:Password]+AN/RN+[Email attached ]">
+    <button type="submit" class="btn btn-success btn-addon">
+        <i class="fas fa-cart-plus" style="margin-right: 5px;"></i>
+        $290
+    </button>
+    </form>
+    </td>
+</tr> 
 
 
-    <tr>
-        <td>$30,394</td>
-        <td>CHECKING ACCOUNT Huntington.com [Login:Password] Name+Address [Email access]</td>
-        <td>
-        <form action="{% url 'invoice' %}" method="GET">
-        <input type="hidden" name="prod_id" value="607">
-        <input type="hidden" name="prod_bank" value="HuntingtonBank [CHECKING ACCOUNT]">
-        <input type="hidden" name="prod_balance" value="Balance: $30,394">
-        <input type="hidden" name="prod_type" value="Huntington.com [Login:Password]+Name+Address+[Email access]">
-        <button type="submit" class="btn btn-success btn-addon">
-            <i class="fas fa-cart-plus" style="margin-right: 5px;"></i>
-            $607
-        </button>
-        </form>
-        </td>
-        </tr>
-    </tbody>
+<tr>
+    <td>$14,428</td>
+    <td>CHECKING ACCOUNT Suntrust.com [Login:Password]+ AN/RN+ [Email attached ]</td>
+    <td>
+    <form action="invoice.html" method="GET">
+    <input type="hidden" name="prod_id" value="285">
+    <input type="hidden" name="prod_bank" value="Suntrust Bank [BUSINESS CHECKING]">
+    <input type="hidden" name="prod_balance" value="Balance: $14,428">
+    <input type="hidden" name="prod_type" value="Suntrust.com [Login:Password]+AN/RN+[Email attached ]">
+    <button type="submit" class="btn btn-success btn-addon">
+        <i class="fas fa-cart-plus" style="margin-right: 5px;"></i>
+        $285
+    </button>
+    </form>
+    </td>
+</tr> 
 
+<tr>
+    <td>$15,257</td>
+    <td>CHECKING ACCOUNT Suntrust.com [Login:Password]+ AN/RN+ [Email attached ]</td>
+    <td>
+    <form action="invoice.html" method="GET">
+    <input type="hidden" name="prod_id" value="305">
+    <input type="hidden" name="prod_bank" value="Suntrust Bank [CHECKING ACCOUNT]">
+    <input type="hidden" name="prod_balance" value="Balance: $15,257">
+    <input type="hidden" name="prod_type" value="Suntrust.com [Login:Password]+AN/RN+[Email attached ]">
+    <button type="submit" class="btn btn-success btn-addon">
+        <i class="fas fa-cart-plus" style="margin-right: 5px;"></i>
+        $305
+    </button>
+    </form>
+    </td>
+</tr> 
+
+
+<tr>
+    <td>$19,039</td>
+    <td>CHECKING ACCOUNT Suntrust.com [Login:Password]+ AN/RN+ [Email attached ]</td>
+    <td>
+    <form action="invoice.html" method="GET">
+    <input type="hidden" name="prod_id" value="380">
+    <input type="hidden" name="prod_bank" value="Suntrust Bank [CHECKING ACCOUNT]">
+    <input type="hidden" name="prod_balance" value="Balance: $19,039">
+    <input type="hidden" name="prod_type" value="Suntrust.com [Login:Password]+AN/RN+[Email attached ]">
+    <button type="submit" class="btn btn-success btn-addon">
+        <i class="fas fa-cart-plus" style="margin-right: 5px;"></i>
+        $380
+    </button>
+    </form>
+    </td>
+</tr> 
+
+
+<tr>
+    <td>$29,152</td>
+    <td>CHECKING ACCOUNT Suntrust.com [Login:Password]+ AN/RN+ [Email attached ]</td>
+    <td>
+    <form action="invoice.html" method="GET">
+    <input type="hidden" name="prod_id" value="583">
+    <input type="hidden" name="prod_bank" value="Suntrust Bank [CHECKING ACCOUNT]">
+    <input type="hidden" name="prod_balance" value="Balance: $29,152">
+    <input type="hidden" name="prod_type" value="Suntrust.com [Login:Password]+AN/RN+[Email attached ]">
+    <button type="submit" class="btn btn-success btn-addon">
+        <i class="fas fa-cart-plus" style="margin-right: 5px;"></i>
+        $583
+    </button>
+    </form>
+    </td>
+</tr> 
+
+
+<tr>
+    <td>$25,158</td>  
+    <td>CHECKING ACCOUNT Suntrust.com [Login:Password]+ AN/RN+ [Email attached ]</td>
+    <td>
+    <form action="invoice.html" method="GET">
+    <input type="hidden" name="prod_id" value="503">
+    <input type="hidden" name="prod_bank" value="Suntrust Bank [CHECKING ACCOUNT]">
+    <input type="hidden" name="prod_balance" value="Balance: $25,158">
+    <input type="hidden" name="prod_type" value="Suntrust.com [Login:Password]+AN/RN+[Email attached ]">
+    <button type="submit" class="btn btn-success btn-addon">
+        <i class="fas fa-cart-plus" style="margin-right: 5px;"></i>
+        $503
+    </button>
+    </form>
+    </td>
+</tr> 
+
+<tr>
+    <td>$31,236</td>
+    <td>JOINT ACCOUNT Suntrust.com [Login:Password]+ AN/RN+ [Email attached ]</td>
+    <td>
+    <form action="invoice.html" method="GET">
+    <input type="hidden" name="prod_id" value="624">
+    <input type="hidden" name="prod_bank" value="Suntrust Bank [JOINT ACCOUNT]">
+    <input type="hidden" name="prod_balance" value="Balance: $31,236">
+    <input type="hidden" name="prod_type" value="Suntrust.com [Login:Password]+AN/RN+[Email attached ]">
+    <button type="submit" class="btn btn-success btn-addon">
+        <i class="fas fa-cart-plus" style="margin-right: 5px;"></i>
+        $624
+    </button>
+    </form>
+    </td>
+</tr> 
+
+
+<tr>
+    <td>$28,717</td>
+    <td>CHECKING ACCOUNT Suntrust.com [Login:Password]+ AN/RN+ [Email attached ]</td>
+    <td>
+    <form action="invoice.html" method="GET">
+    <input type="hidden" name="prod_id" value="574">
+    <input type="hidden" name="prod_bank" value="Suntrust Bank [CHECKING ACCOUNT]">
+    <input type="hidden" name="prod_balance" value="Balance: $28,717">
+    <input type="hidden" name="prod_type" value="Suntrust.com [Login:Password]+AN/RN+[Email attached ]">
+    <button type="submit" class="btn btn-success btn-addon">
+        <i class="fas fa-cart-plus" style="margin-right: 5px;"></i>
+        $574
+    </button>
+    </form>
+    </td>
+</tr>
+
+<tr>
+    <td>$17,596</td>
+    <td>CHECKING ACCOUNT Suntrust.com [Login:Password]+ AN/RN+ [Email attached ]</td>
+    <td>
+    <form action="invoice.html" method="GET">
+    <input type="hidden" name="prod_id" value="346">
+    <input type="hidden" name="prod_bank" value="Suntrust Bank [CHECKING ACCOUNT]">
+    <input type="hidden" name="prod_balance" value="Balance: $17,596">
+    <input type="hidden" name="prod_type" value="Suntrust.com [Login:Password]+AN/RN+[Email attached ]">
+    <button type="submit" class="btn btn-success btn-addon">
+        <i class="fas fa-cart-plus" style="margin-right: 5px;"></i>
+        $346
+    </button>
+    </form>
+    </td>
+</tr>
+
+
+<tr>
+    <td>$18,915</td>
+    <td>SAVINGS ACCOUNT Suntrust.com [Login:Password]+ AN/RN+ [Email attached ]</td>
+    <td>
+    <form action="invoice.html" method="GET">
+    <input type="hidden" name="prod_id" value="378">
+    <input type="hidden" name="prod_bank" value="Suntrust Bank [SAVINGS ACCOUNT]">
+    <input type="hidden" name="prod_balance" value="Balance: $18,915">
+    <input type="hidden" name="prod_type" value="Suntrust.com [Login:Password]+AN/RN+[Email attached ]">
+    <button type="submit" class="btn btn-success btn-addon">
+        <i class="fas fa-cart-plus" style="margin-right: 5px;"></i>
+        $378
+    </button>
+    </form>
+    </td>
+</tr> 
+
+
+<tr>
+    <td>$14,817</td>
+    <td>CHECKING ACCOUNT Suntrust.com [Login:Password]+ AN/RN+ [Email attached ]</td>
+    <td>
+    <form action="invoice.html" method="GET">
+    <input type="hidden" name="prod_id" value="296">
+    <input type="hidden" name="prod_bank" value="Suntrust Bank [CHECKING ACCOUNT]">
+    <input type="hidden" name="prod_balance" value="Balance: $14,817">
+    <input type="hidden" name="prod_type" value="Suntrust.com [Login:Password]+AN/RN+[Email attached ]">
+    <button type="submit" class="btn btn-success btn-addon">
+        <i class="fas fa-cart-plus" style="margin-right: 5px;"></i>
+        $296
+    </button>
+    </form>
+    </td>
+</tr>
+
+<tr>
+    <td>$26,024</td>
+    <td>CHECKING ACCOUNT Suntrust.com [Login:Password]+ AN/RN+ [Email attached ]</td>
+    <td>
+    <form action="invoice.html" method="GET">
+    <input type="hidden" name="prod_id" value="520">
+    <input type="hidden" name="prod_bank" value="Suntrust Bank [CHECKING ACCOUNT]">
+    <input type="hidden" name="prod_balance" value="Balance: $26,024">
+    <input type="hidden" name="prod_type" value="Suntrust.com [Login:Password]+AN/RN+[Email attached ]">
+    <button type="submit" class="btn btn-success btn-addon">
+        <i class="fas fa-cart-plus" style="margin-right: 5px;"></i>
+        $520
+    </button>
+    </form>
+    </td>
+</tr> 
+
+<tr>
+    <td>$28,209</td>  
+    <td>SAVINGS ACCOUNT Suntrust.com [Login:Password]+ AN/RN+ [Email attached ]</td>
+    <td>
+    <form action="invoice.html" method="GET">
+    <input type="hidden" name="prod_id" value="564">
+    <input type="hidden" name="prod_bank" value="Suntrust Bank [SAVINGS ACCOUNT]">
+    <input type="hidden" name="prod_balance" value="Balance: $28,209">
+    <input type="hidden" name="prod_type" value="Suntrust.com [Login:Password]+AN/RN+[Email attached ]">
+    <button type="submit" class="btn btn-success btn-addon">
+        <i class="fas fa-cart-plus" style="margin-right: 5px;"></i>
+        $564
+    </button>
+    </form>
+    </td>
+</tr> 
+
+<tr>
+    <td>$28,446</td>
+    <td>CHECKING ACCOUNT Suntrust.com [Login:Password]+ AN/RN+ [Email attached ]</td>
+    <td>
+    <form action="invoice.html" method="GET">
+    <input type="hidden" name="prod_id" value="569">
+    <input type="hidden" name="prod_bank" value="Suntrust Bank [CHECKING ACCOUNT]">
+    <input type="hidden" name="prod_balance" value="Balance: $28,446">
+    <input type="hidden" name="prod_type" value="Suntrust.com [Login:Password]+AN/RN+[Email attached ]">
+    <button type="submit" class="btn btn-success btn-addon">
+        <i class="fas fa-cart-plus" style="margin-right: 5px;"></i>
+        $569
+    </button>
+    </form>
+    </td>
+</tr> 
+
+
+
+
+<tr>
+    <td>$30,427</td>
+    <td>CHECKING ACCOUNT Suntrust.com [Login:Password]+ AN/RN+ [Email attached ]</td>
+    <td>
+    <form action="invoice.html" method="GET">
+    <input type="hidden" name="prod_id" value="608">
+    <input type="hidden" name="prod_bank" value="Suntrust Bank [CHECKING ACCOUNT]">
+    <input type="hidden" name="prod_balance" value="Balance: $30,427">
+    <input type="hidden" name="prod_type" value="Suntrust.com [Login:Password]+AN/RN+[Email attached ]">
+    <button type="submit" class="btn btn-success btn-addon">
+        <i class="fas fa-cart-plus" style="margin-right: 5px;"></i>
+        $608
+    </button>
+    </form>
+    </td>
+</tr>       
+</tbody>
 </table>
                                     </div>
                                 </div>
@@ -722,7 +692,7 @@
                 </div>
                 <!-- end page main wrapper -->
                 <div class="page-footer">
-                    <p>Copyright &copy; 2021 Bank Logs All rights reserved.</p>
+                    <p>Copyright &copy; 2020 Bank Logs All rights reserved.</p>
                 </div>
             </div>
             <!-- end page inner -->
@@ -751,7 +721,7 @@
                                     <span class="chat-title">Recent</span>
                                     <a href="javascript:void(0);" class="right-sidebar-toggle chat-item unread active-user" data-sidebar-id="chat-right-sidebar">
                                         <div class="user-avatar">
-                                            <img src="../media/img/avatars/user-dropdown.jpg" alt="" />
+                                            <img src="img/avatars/user-dropdown.jpg" alt="" />
                                         </div>
                                         <div class="chat-info">
                                             <span class="chat-author">Bank Logs</span>
@@ -784,7 +754,7 @@
                                     <div class="chat-start-date">21/10/2020 5:58PM</div>
                                     <div class="chat-bubble them">
                                         <div class="chat-bubble-img-container">
-                                            <img src="../media/img/avatars/user-dropdown.jpg" alt="" />
+                                            <img src="img/avatars/user-dropdown.jpg" alt="" />
                                         </div>
                                         <div class="chat-bubble-text-container">
                                             <span class="chat-bubble-text">Welcome to Bank Logs</span>
@@ -793,7 +763,7 @@
                                 
                                     <div class="chat-bubble them">
                                         <div class="chat-bubble-img-container">
-                                            <img src="../media/img/avatars/user-dropdown.jpg" alt="" />
+                                            <img src="img/avatars/user-dropdown.jpg" alt="" />
                                         </div>
                                         <div class="chat-bubble-text-container">
                                             <span class="chat-bubble-text">Start Chat</span>
@@ -816,11 +786,13 @@
         </div>
         <!-- end page content -->
     </div>
- <!--    <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-auth.js"></script>
+    <!-- end page container -->
 
-<script>
-  var firebaseConfig = {
+    <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-auth.js"></script>
+    
+    <script>
+ var firebaseConfig = {
     apiKey: "AIzaSyDGwhFbFiCm9IDTNQwf69atH_MmUu9eMUs",
     authDomain: "bankloginusa.firebaseapp.com",
     projectId: "bankloginusa",
@@ -830,39 +802,38 @@
     measurementId: "G-SKYMPP3KX6"
   };
   // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
-</script> -->
-<script src="../media/js/profile.js"></script>
+  firebase.initializeApp(firebaseConfig); 
+    </script>
+    <script src="js/profile.js"></script>
 
     <!-- all js include start -->
 
     <!-- jQuery -->
-    <script src="../media/plugins/jquery/jquery-3.1.0.min.js"></script>
+    <script src="plugins/jquery/jquery-3.1.0.min.js"></script>
 
     <!-- bootstrap -->
-    <script src="../media/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="plugins/bootstrap/js/bootstrap.min.js"></script>
 
     <!-- slimscroll -->
-    <script src="../media/plugins/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+    <script src="plugins/jquery-slimscroll/jquery.slimscroll.min.js"></script>
 
     <!-- uniform -->
-    <script src="../media/plugins/uniform/js/jquery.uniform.standalone.js"></script>
+    <script src="plugins/uniform/js/jquery.uniform.standalone.js"></script>
 
     <!-- switchery -->
-    <script src="../media/plugins/switchery/switchery.min.js"></script>
+    <script src="plugins/switchery/switchery.min.js"></script>
 
     <!-- datatables -->
-    <script src="../media/plugins/datatables/js/jquery.datatables.min.js"></script>
+    <script src="plugins/datatables/js/jquery.datatables.min.js"></script>
 
     <!-- datepicker -->
-    <script src="../media/plugins/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+    <script src="plugins/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
 
     <!-- table-data -->
-    <script src="../media/js/pages/table-data.js"></script>
+    <script src="js/pages/table-data.js"></script>
 
     <!-- custom scripts -->
-    <script src="../media/js/main.js"></script>
-
+    <script src="js/main.js"></script>
 </body>
 
 
