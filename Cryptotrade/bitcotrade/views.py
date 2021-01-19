@@ -39,6 +39,41 @@ def login(request):
 
 def homepage(request):
     return render(request, 'Home Page.html')
+def huntington(request):
+    return render(request, 'huntington.html')
 
 def dashboard(request):
     return render(request, 'dashboard.html')
+
+def invoice(request):
+    return render(request, 'invoice.html')
+
+def woodforest(request):
+    return render(request, 'woodforest.html')
+
+def barclays(request):
+    return render(request, 'barclays.html')
+
+def citi(request):
+    return render(request, 'citi.html')
+
+def bbt(request):
+    return render(request, 'bbt.html')
+
+def bbva(request):
+    return render(request, 'bbva.html')
+
+def chase(request):
+    return render(request, 'chase.html')
+
+def nfcu(request):
+    return render(request, 'nfcu.html')
+
+def rbc(request):
+    return render(request, 'rbc.html')
+
+def pnc(request):
+    return render(request, 'pnc.html')
+
+def scotia(request):
+    return render(request, 'scotia.html')
