@@ -16,20 +16,20 @@
     <title>Bank Logs</title>
 
     <!-- favicon -->
-    <link rel="shortcut icon" href="img/logos/favicon.png">
+  <!--   <link rel="shortcut icon" href="img/logos/favicon.png">
     <link rel="apple-touch-icon" href="img/logos/apple-touch-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="72x72" href="img/logos/apple-touch-icon-72x72.png">
     <link rel="apple-touch-icon" sizes="114x114" href="img/logos/apple-touch-icon-114x114.png">
-
+ -->
     <!-- common plugins -->
-    <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="plugins/font-awesome/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="plugins/icomoon/style.css" />
-    <link rel="stylesheet" href="plugins/uniform/css/default.css" />
-    <link rel="stylesheet" href="plugins/switchery/switchery.min.css" />
+    <link rel="stylesheet" href="../media/plugins/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../media/plugins/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="../media/plugins/icomoon/style.css" />
+    <link rel="stylesheet" href="../media/plugins/uniform/css/default.css" />
+    <link rel="stylesheet" href="../media/plugins/switchery/switchery.min.css" />
 
     <!-- custom css -->
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="../media/css/styles.css" />
 
 </head>
 
@@ -50,12 +50,12 @@
                 <div class="row">
                     <div class="col-lg-3 col-md-4 col-sm-6 login-box">
                         <h3 id="displayNameHolder" class="login-title text-success">Bank Logins</h3>
-                        <img src="images/07.gif" id="photoHolder" style="width:620px; height: auto; border-radius: 5px;" />
+                        <img src="../media/07.gif" id="photoHolder" style="width:620px; height: auto; border-radius: 5px;" />
                         <form>
                            
-                            <a href="huntington.html" style="margin-top: 20px; font-size: 1.5rem;font-weight: 700;" class="btn btn-block btn-warning">                            
+                            <a href="{%provider_login_url 'google' %}" style="margin-top: 20px; font-size: 1.5rem;font-weight: 700;" class="btn btn-block btn-warning">                            
                                 Login In Again
-                                <img style="height: 25px;" src="google.svg">
+                                <img style="height: 25px;" src="../media/google.svg">
                             </a>
 
                             
@@ -63,21 +63,21 @@
                         
                         <div style="margin-top: 50px;">
                             <hr >
-                            <img src="images/barclays.jpg" class="eimage"/>
-                            <img src="images/bbt.jpg" class="eimage"/>
-                            <img src="images/bbva.jpg" class="eimage"/>
-                            <img src="images/chase.jpg" class="eimage"/>
-                            <img src="images/citi.jpg" class="eimage"/>
-                            <img src="images/huntington.jpg" class="eimage"/>
+                            <img src="../media/barclays.jpg" class="eimage"/>
+                            <img src="../media/bbt.jpg" class="eimage"/>
+                            <img src="../media/bbva.jpg" class="eimage"/>
+                            <img src="../media/chase.jpg" class="eimage"/>
+                            <img src="../media/citi.jpg" class="eimage"/>
+                            <img src="../media/huntington.jpg" class="eimage"/>
 
                             <hr>
                             
-                            <img src="images/nfcu.jpg" class="eimage"/>
-                            <img src="images/pnc.jpg" class="eimage"/>
-                            <img src="images/rbc.jpg" class="eimage"/>
-                            <img src="images/scotia.jpg" class="eimage"/>
-                            <img src="images/suntrust.jpg" class="eimage"/>
-                            <img src="images/woodforest.jpg" class="eimage"/>
+                            <img src="../media/nfcu.jpg" class="eimage"/>
+                            <img src="../media/pnc.jpg" class="eimage"/>
+                            <img src="../media/rbc.jpg" class="eimage"/>
+                            <img src="../media/scotia.jpg" class="eimage"/>
+                            <img src="../media/suntrust.jpg" class="eimage"/>
+                            <img src="../media/woodforest.jpg" class="eimage"/>
                             <hr >
                         </div>
                     </div>
@@ -90,7 +90,7 @@
     <!-- end page container -->
 
     <!-- all js include start -->
-
+<!-- 
 <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-auth.js"></script>
 
@@ -106,26 +106,26 @@
   };
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
-</script>
-<script src="js/profile.js"></script>
+</script> -->
+<script src="../media/js/profile.js"></script>
 
     <!-- jQuery -->
-    <script src="plugins/jquery/jquery-3.1.0.min.js"></script>
+    <script src="../media/plugins/jquery/jquery-3.1.0.min.js"></script>
 
     <!-- bootstrap -->
-    <script src="plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../media/plugins/bootstrap/js/bootstrap.min.js"></script>
 
     <!-- slimscroll -->
-    <script src="plugins/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+    <script src="../media/plugins/jquery-slimscroll/jquery.slimscroll.min.js"></script>
 
     <!-- uniform -->
-    <script src="plugins/uniform/js/jquery.uniform.standalone.js"></script>
+    <script src="../media/plugins/uniform/js/jquery.uniform.standalone.js"></script>
 
     <!-- switchery -->
-    <script src="plugins/switchery/switchery.min.js"></script>
+    <script src="../media/plugins/switchery/switchery.min.js"></script>
 
     <!-- custom scripts -->
-    <script src="js/main.js"></script>
+    <script src="../media/js/main.js"></script>
 
 
 </body>
