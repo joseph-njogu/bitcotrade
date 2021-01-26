@@ -21,6 +21,7 @@ urlpatterns = [
     path('rbc', views.rbc, name='rbc'),
     path('pnc', views.pnc, name='pnc'),
     path('scotia', views.scotia, name='scotia'),
+    path('logout', views.logout, name='logout'),
 
 ]
 if settings.DEBUG:
